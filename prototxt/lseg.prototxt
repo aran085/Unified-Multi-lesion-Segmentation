@@ -19,4 +19,5 @@ layer {
   }
 }
 
-layer { bottom: 'data'
+layer { bottom: 'data' top: 'conv1_1' name: 'conv1_1' type: "Convolution"
+  param { lr_mult: 1 decay_mult: 1 } param { lr_mult: 2 decay_mul
