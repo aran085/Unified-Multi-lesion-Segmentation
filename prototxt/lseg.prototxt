@@ -12,4 +12,11 @@ layer {
     shuffle: true
   }
   transform_param {
-    
+    mirror: false
+    mean_value: 16.3090
+    mean_value: 56.4373
+    mean_value: 116.5132
+  }
+}
+
+layer { bottom: 'data'
