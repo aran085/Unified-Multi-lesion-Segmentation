@@ -20,4 +20,6 @@ layer {
 }
 
 layer { bottom: 'data' top: 'conv1_1' name: 'conv1_1' type: "Convolution"
-  param { lr_mult: 1 decay_mult: 1 } param { lr_mult: 2 decay_mul
+  param { lr_mult: 1 decay_mult: 1 } param { lr_mult: 2 decay_mult: 0}
+  convolution_param { engine: CAFFE num_output: 64 pad: 1  kernel_size: 3 } }
+layer { bottom: 'conv1_1' top:
