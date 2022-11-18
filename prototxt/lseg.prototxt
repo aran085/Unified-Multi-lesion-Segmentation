@@ -1,0 +1,8 @@
+name: "lseg"
+
+layer {
+  name: "data"
+  type: "ImageLabelmapData"
+  top: "data"
+  top: "label"
+  im
