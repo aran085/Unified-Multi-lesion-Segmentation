@@ -5,4 +5,11 @@ layer {
   type: "ImageLabelmapData"
   top: "data"
   top: "label"
-  im
+  image_data_param {
+    root_folder: ""
+    source: ""
+    batch_size: 1
+    shuffle: true
+  }
+  transform_param {
+    
