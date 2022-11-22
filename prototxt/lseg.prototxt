@@ -28,4 +28,6 @@ layer { bottom: 'conv1_1' top: 'conv1_2' name: 'conv1_2' type: "Convolution"
   convolution_param { engine: CAFFE num_output: 64 pad: 1 kernel_size: 3 } }
 layer { bottom: 'conv1_2' top: 'conv1_2' name: 'relu1_2' type: "ReLU" }
 layer { name: 'pool1' bottom: 'conv1_2' top: 'pool1' type: "Pooling"
-  poo
+  pooling_param { pool: MAX kernel_size: 2 stride: 2 } }
+
+layer { name: 'conv2_1' bottom: 'pool1' top: 'conv2_1' type: "Convoluti
