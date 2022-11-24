@@ -30,4 +30,6 @@ layer { bottom: 'conv1_2' top: 'conv1_2' name: 'relu1_2' type: "ReLU" }
 layer { name: 'pool1' bottom: 'conv1_2' top: 'pool1' type: "Pooling"
   pooling_param { pool: MAX kernel_size: 2 stride: 2 } }
 
-layer { name: 'conv2_1' bottom: 'pool1' top: 'conv2_1' type: "Convoluti
+layer { name: 'conv2_1' bottom: 'pool1' top: 'conv2_1' type: "Convolution"
+  param { lr_mult: 1 decay_mult: 1 } param { lr_mult: 2 decay_mult: 0}
+  convolution_param { engine: CAFFE num_ou
