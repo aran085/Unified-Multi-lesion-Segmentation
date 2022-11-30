@@ -41,4 +41,5 @@ layer { bottom: 'conv2_2' top: 'conv2_2' name: 'relu2_2' type: "ReLU" }
 layer { bottom: 'conv2_2' top: 'pool2' name: 'pool2' type: "Pooling"
   pooling_param { pool: MAX kernel_size: 2 stride: 2 } }
 
-laye
+layer { bottom: 'pool2' top: 'conv3_1' name: 'conv3_1' type: "Convolution"
+  param { lr_mult: 1 decay_mult: 1 } param { lr_mult
