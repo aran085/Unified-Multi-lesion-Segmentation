@@ -48,4 +48,6 @@ layer { bottom: 'conv3_1' top: 'conv3_1' name: 'relu3_1' type: "ReLU" }
 layer { bottom: 'conv3_1' top: 'conv3_2' name: 'conv3_2' type: "Convolution"
   param { lr_mult: 1 decay_mult: 1 } param { lr_mult: 2 decay_mult: 0}
   convolution_param { engine: CAFFE num_output: 256 pad: 1 kernel_size: 3 } }
-layer { bottom: 'conv3_2' top: 'conv3_2' name: 'relu3_2' type: "R
+layer { bottom: 'conv3_2' top: 'conv3_2' name: 'relu3_2' type: "ReLU" }
+layer { bottom: 'conv3_2' top: 'conv3_3' name: 'conv3_3' type: "Convolution"
+  param { lr_mult: 1 deca
