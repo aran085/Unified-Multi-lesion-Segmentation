@@ -73,4 +73,6 @@ layer { bottom: 'conv4_3' top: 'pool4' name: 'pool4' type: "Pooling"
 
 layer { bottom: 'pool4' top: 'conv5_1' name: 'conv5_1' type: "Convolution"
   param { lr_mult: 100 decay_mult: 1 } param { lr_mult: 200 decay_mult: 0}
-  convolution_param { engine: CAFFE num_output: 512 pad: 1 kerne
+  convolution_param { engine: CAFFE num_output: 512 pad: 1 kernel_size: 3 } }
+layer { bottom: 'conv5_1' top: 'conv5_1' name: 'relu5_1' type: "ReLU" }
+layer { bottom: 'c
