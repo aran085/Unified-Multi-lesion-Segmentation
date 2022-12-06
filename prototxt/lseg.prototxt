@@ -72,4 +72,5 @@ layer { bottom: 'conv4_3' top: 'pool4' name: 'pool4' type: "Pooling"
   pooling_param { pool: MAX kernel_size: 2 stride: 2 } }
 
 layer { bottom: 'pool4' top: 'conv5_1' name: 'conv5_1' type: "Convolution"
-  param { lr_mult: 100 decay_mult:
+  param { lr_mult: 100 decay_mult: 1 } param { lr_mult: 200 decay_mult: 0}
+  convolution_param { engine: CAFFE num_output: 512 pad: 1 kerne
