@@ -79,4 +79,5 @@ layer { bottom: 'conv5_1' top: 'conv5_2' name: 'conv5_2' type: "Convolution"
   param { lr_mult: 100 decay_mult: 1 } param { lr_mult: 200 decay_mult: 0}
   convolution_param { engine: CAFFE num_output: 512 pad: 1 kernel_size: 3 } }
 layer { bottom: 'conv5_2' top: 'conv5_2' name: 'relu5_2' type: "ReLU" }
-layer { bottom: 'conv5_2' top: '
+layer { bottom: 'conv5_2' top: 'conv5_3' name: 'conv5_3' type: "Convolution"
+  param { lr_mult: 100 decay_mult: 1 } param { lr_mult: 200 de
