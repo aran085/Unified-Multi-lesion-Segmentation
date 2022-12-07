@@ -82,4 +82,7 @@ layer { bottom: 'conv5_2' top: 'conv5_2' name: 'relu5_2' type: "ReLU" }
 layer { bottom: 'conv5_2' top: 'conv5_3' name: 'conv5_3' type: "Convolution"
   param { lr_mult: 100 decay_mult: 1 } param { lr_mult: 200 decay_mult: 0}
   convolution_param { engine: CAFFE num_output: 512 pad: 1 kernel_size: 3 } }
-layer { bottom: 'conv5_3'
+layer { bottom: 'conv5_3' top: 'conv5_3' name: 'relu5_3' type: "ReLU" }
+
+## DSN conv 1 ###
+layer { name: 'new-score-dsn1' type: "Convolution" bot
