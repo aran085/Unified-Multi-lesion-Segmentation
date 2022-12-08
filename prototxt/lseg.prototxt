@@ -89,4 +89,7 @@ layer { name: 'new-score-dsn1' type: "Convolution" bottom: 'conv1_2' top: 'score
   param { lr_mult: 0.01 decay_mult: 1 } param { lr_mult: 0.02 decay_mult: 0}
   convolution_param { engine: CAFFE num_output: 4 kernel_size: 1 } }
 layer { type: "Crop" name: 'crop' bottom: 'score-dsn1-up' bottom: 'data' top: 'upscore-dsn1' }
-layer { type: "MultiChannelBinSigmoidCrossEntropyLoss" bottom: "upscore-dsn1" bottom: "label" top:"dsn1_loss"  loss_weight: 1 mcbsce_loss_param {num_label: 4 key: 10 
+layer { type: "MultiChannelBinSigmoidCrossEntropyLoss" bottom: "upscore-dsn1" bottom: "label" top:"dsn1_loss"  loss_weight: 1 mcbsce_loss_param {num_label: 4 key: 10 }  }
+
+### DSN conv 2 ###
+layer { name: 'new-score-dsn2' type: "Convolution" bottom: 'conv2_2' top
