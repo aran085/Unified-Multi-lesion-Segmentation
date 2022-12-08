@@ -87,3 +87,5 @@ layer { bottom: 'conv5_3' top: 'conv5_3' name: 'relu5_3' type: "ReLU" }
 ## DSN conv 1 ###
 layer { name: 'new-score-dsn1' type: "Convolution" bottom: 'conv1_2' top: 'score-dsn1-up'
   param { lr_mult: 0.01 decay_mult: 1 } param { lr_mult: 0.02 decay_mult: 0}
+  convolution_param { engine: CAFFE num_output: 4 kernel_size: 1 } }
+layer { type: "Crop" name: 'crop' bottom: 'score-dsn
