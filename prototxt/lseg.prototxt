@@ -97,4 +97,5 @@ layer { name: 'new-score-dsn2' type: "Convolution" bottom: 'conv2_2' top: 'score
   convolution_param { engine: CAFFE num_output: 4 kernel_size: 1 } }
 layer { type: "Deconvolution" name: 'upsample_22' bottom: 'score-dsn2' top: 'score-dsn2-up'
   param { lr_mult: 0 decay_mult: 1 } param { lr_mult: 0 decay_mult: 0}
-  convolution_p
+  convolution_param { kernel_size: 4 stride: 2 num_output: 4 } }
+layer { type: "Crop" name: 'crop' bottom: 'score-dsn2-up' b
