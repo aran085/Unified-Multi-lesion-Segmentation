@@ -103,4 +103,5 @@ layer { type: "MultiChannelBinSigmoidCrossEntropyLoss" bottom: "upscore-dsn2" bo
 
 ### DSN conv 3 ###
 layer { name: 'new-score-dsn3' type: "Convolution" bottom: 'conv3_3' top: 'score-dsn3'
-  param { lr_mult: 0.01 decay
+  param { lr_mult: 0.01 decay_mult: 1 } param { lr_mult: 0.02 decay_mult: 0}
+  convolution_param { engine: CAFFE num_output: 4 kernel_
