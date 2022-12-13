@@ -102,3 +102,5 @@ layer { type: "Crop" name: 'crop' bottom: 'score-dsn2-up' bottom: 'data' top: 'u
 layer { type: "MultiChannelBinSigmoidCrossEntropyLoss" bottom: "upscore-dsn2" bottom: "label" top:"dsn2_loss"  loss_weight: 1 mcbsce_loss_param {num_label: 4 key: 10 }  }
 
 ### DSN conv 3 ###
+layer { name: 'new-score-dsn3' type: "Convolution" bottom: 'conv3_3' top: 'score-dsn3'
+  param { lr_mult: 0.01 decay
