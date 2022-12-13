@@ -99,4 +99,6 @@ layer { type: "Deconvolution" name: 'upsample_22' bottom: 'score-dsn2' top: 'sco
   param { lr_mult: 0 decay_mult: 1 } param { lr_mult: 0 decay_mult: 0}
   convolution_param { kernel_size: 4 stride: 2 num_output: 4 } }
 layer { type: "Crop" name: 'crop' bottom: 'score-dsn2-up' bottom: 'data' top: 'upscore-dsn2' }
-layer { type: "MultiChannelBinSigmoidCrossEntropyLoss" bottom: "upscore-dsn2" 
+layer { type: "MultiChannelBinSigmoidCrossEntropyLoss" bottom: "upscore-dsn2" bottom: "label" top:"dsn2_loss"  loss_weight: 1 mcbsce_loss_param {num_label: 4 key: 10 }  }
+
+### DSN conv 3 ###
