@@ -109,4 +109,4 @@ layer { type: "Deconvolution" name: 'upsample_44' bottom: 'score-dsn3' top: 'sco
   param { lr_mult: 0 decay_mult: 1 } param { lr_mult: 0 decay_mult: 0}
   convolution_param { kernel_size: 8 stride: 4 num_output: 4 } }
 layer { type: "Crop" name: 'crop' bottom: 'score-dsn3-up' bottom: 'data' top: 'upscore-dsn3' }
-layer 
+layer { type: "MultiChannelBinSigmoidCrossEntropyLoss" bottom: "upscore-dsn3" bottom: "label" top:"dsn
