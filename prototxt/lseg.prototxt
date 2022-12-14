@@ -116,4 +116,6 @@ layer { name: 'new-score-dsn4' type: "Convolution" bottom: 'conv4_3' top: 'score
   param { lr_mult: 0.01 decay_mult: 1 } param { lr_mult: 0.02 decay_mult: 0}
   convolution_param { engine: CAFFE num_output: 4 kernel_size: 1 } }
 layer { type: "Deconvolution" name: 'upsample_88' bottom: 'score-dsn4' top: 'score-dsn4-up'
-  param { lr_mult: 0 deca
+  param { lr_mult: 0 decay_mult: 1 } param { lr_mult: 0 decay_mult: 0}
+  convolution_param { kernel_size: 16 stride: 8 num_output: 4 } }
+lay
