@@ -119,4 +119,4 @@ layer { type: "Deconvolution" name: 'upsample_88' bottom: 'score-dsn4' top: 'sco
   param { lr_mult: 0 decay_mult: 1 } param { lr_mult: 0 decay_mult: 0}
   convolution_param { kernel_size: 16 stride: 8 num_output: 4 } }
 layer { type: "Crop" name: 'crop' bottom: 'score-dsn4-up' bottom: 'data' top: 'upscore-dsn4' }
-layer { type: "MultiChannelBinSigmo
+layer { type: "MultiChannelBinSigmoidCrossEntropyLoss" bottom: "upscore-dsn4" bottom: "label" top:"dsn4_loss"  loss_weight: 1 mcbsce_loss_param {nu
