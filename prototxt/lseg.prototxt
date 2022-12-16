@@ -128,4 +128,5 @@ layer { name: 'new-score-dsn5' type: "Convolution" bottom: 'conv5_3' top: 'score
 layer { type: "Deconvolution" name: 'upsample_166' bottom: 'score-dsn5' top: 'score-dsn5-up'
   param { lr_mult: 0 decay_mult: 1 } param { lr_mult: 0 decay_mult: 0}
   convolution_param { kernel_size: 32 stride: 16 num_output: 4 } }
-layer { type:
+layer { type: "Crop" name: 'crop' bottom: 'score-dsn5-up' bottom: 'data' top: 'upscore-dsn5' }
+layer { type: "MultiChannelB
