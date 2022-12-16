@@ -133,4 +133,6 @@ layer { type: "MultiChannelBinSigmoidCrossEntropyLoss" bottom: "upscore-dsn5" bo
 
 
 ### slice dsn1 ###
-layer {name: "slice_dsn1" type: "Slice" bottom: "upscore-dsn1" top: "dsn1_s1" top: "d
+layer {name: "slice_dsn1" type: "Slice" bottom: "upscore-dsn1" top: "dsn1_s1" top: "dsn1_s2" top: "dsn1_s3" top: "dsn1_s4" slice_param {axis: 1 slice_point: 1 slice_point: 2 slice_point: 3 }}
+
+###
