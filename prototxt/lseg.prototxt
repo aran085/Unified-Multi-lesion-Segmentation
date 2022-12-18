@@ -144,4 +144,5 @@ layer {name: "slice_dsn3" type: "Slice" bottom: "upscore-dsn3" top: "dsn3_s1" to
 ### slice dsn4 ###
 layer {name: "slice_dsn4" type: "Slice" bottom: "upscore-dsn4" top: "dsn4_s1" top: "dsn4_s2" top: "dsn4_s3" top: "dsn4_s4" slice_param {axis: 1 slice_point: 1 slice_point: 2 slice_point: 3 }}
 
-##
+### slice dsn5 ###
+layer {name: "slice_dsn5" type: "Slice" bottom: "upscore-dsn5" top: "dsn5_s1" top: "dsn5_
