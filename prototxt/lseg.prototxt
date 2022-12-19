@@ -148,4 +148,4 @@ layer {name: "slice_dsn4" type: "Slice" bottom: "upscore-dsn4" top: "dsn4_s1" to
 layer {name: "slice_dsn5" type: "Slice" bottom: "upscore-dsn5" top: "dsn5_s1" top: "dsn5_s2" top: "dsn5_s3" top: "dsn5_s4" slice_param {axis: 1 slice_point: 1 slice_point: 2 slice_point: 3 }}
 
 ### concat channel 1 ###
-layer {name: "concat_channel1" type: "Concat" bottom: "dsn
+layer {name: "concat_channel1" type: "Concat" bottom: "dsn1_s1" bottom: "dsn2_s1" bottom: "dsn3_s1" bottom: "dsn4_s1" bottom: "dsn5_s1" top: "concat_ch1" conc
