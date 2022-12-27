@@ -155,4 +155,5 @@ layer { name: 'fusion_channel1' type: "Convolution" bottom: 'concat_ch1' top: 'f
 layer {name: "concat_channel2" type: "Concat" bottom: "dsn1_s2" bottom: "dsn2_s2" bottom: "dsn3_s2" bottom: "dsn4_s2" bottom: "dsn5_s2" top: "concat_ch2" concat_param { concat_dim: 1}}
 layer { name: 'fusion_channel2' type: "Convolution" bottom: 'concat_ch2' top: 'fusion_ch2' param { lr_mult: 1 decay_mult: 1 } param { lr_mult: 2 decay_mult: 0} convolution_param { num_output: 1 kernel_size: 1 weight_filler {type: "constant" value: 0.2} } }
 
-### c
+### concat channel 3 ###
+layer {name: "concat_channel3" type: "Concat" bottom: "dsn1_s3" bottom: "dsn2_s3" bottom: "dsn
