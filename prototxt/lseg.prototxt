@@ -165,4 +165,4 @@ layer { name: 'fusion_channel4' type: "Convolution" bottom: 'concat_ch4' top: 'f
 
 ### concat fusion_channel1 to fusion_channel5
 layer {name: "concat_fusion_channel" type: "Concat" bottom: "fusion_ch1" bottom: "fusion_ch2" bottom: "fusion_ch3" bottom: "fusion_ch4" top: "concat_fusion" concat_param {concat_dim: 1}}
-layer { type: "MultiChannelBinSigmoidCrossEntropyLoss" bottom: "concat_fusion" bottom: "label" top:"fuse_loss"  loss_weight: 1 mcbsc
+layer { type: "MultiChannelBinSigmoidCrossEntropyLoss" bottom: "concat_fusion" bottom: "label" top:"fuse_loss"  loss_weight: 1 mcbsce_loss_param {num_label: 4 key: 10 }  }
