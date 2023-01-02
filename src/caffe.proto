@@ -2,4 +2,9 @@ syntax = "proto2";
 
 package caffe;
 
-// Specifies the shape (dimensions) 
+// Specifies the shape (dimensions) of a Blob.
+message BlobShape {
+  repeated int64 dim = 1 [packed = true];
+}
+
+message BlobProt
