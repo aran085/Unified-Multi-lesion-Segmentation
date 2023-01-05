@@ -23,4 +23,10 @@ message BlobProto {
 
 // The BlobProtoVector is simply a way to pass multiple blobproto instances
 // around.
-message BlobProt
+message BlobProtoVector {
+  repeated BlobProto blobs = 1;
+}
+
+message Datum {
+  optional int32 channels = 1;
+  optional int32 height 
