@@ -42,4 +42,6 @@ message Datum {
 
 message FillerParameter {
   // The filler type.
-  optional string type = 1 [default = 'constan
+  optional string type = 1 [default = 'constant'];
+  optional float value = 2 [default = 0]; // the value in constant filler
+  optional f
