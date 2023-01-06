@@ -37,4 +37,9 @@ message Datum {
   // Optionally, the datum could also hold float data.
   repeated float float_data = 6;
   // If true data contains an encoded image that need to be decoded
-  optional bool encoded 
+  optional bool encoded = 7 [default = false];
+}
+
+message FillerParameter {
+  // The filler type.
+  optional string type = 1 [default = 'constan
