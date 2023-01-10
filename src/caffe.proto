@@ -61,4 +61,6 @@ message FillerParameter {
   optional VarianceNorm variance_norm = 8 [default = FAN_IN];
 }
 
-message Ne
+message NetParameter {
+  optional string name = 1; // consider giving the network a name
+  // DEPREC
