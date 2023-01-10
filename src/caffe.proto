@@ -56,4 +56,9 @@ message FillerParameter {
   enum VarianceNorm {
     FAN_IN = 0;
     FAN_OUT = 1;
-  
+    AVERAGE = 2;
+  }
+  optional VarianceNorm variance_norm = 8 [default = FAN_IN];
+}
+
+message Ne
