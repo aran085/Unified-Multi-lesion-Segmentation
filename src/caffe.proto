@@ -65,4 +65,7 @@ message NetParameter {
   optional string name = 1; // consider giving the network a name
   // DEPRECATED. See InputParameter. The input blobs to the network.
   repeated string input = 3;
-  // DEPRECATED. See InputPa
+  // DEPRECATED. See InputParameter. The shape of the input blobs.
+  repeated BlobShape input_shape = 8;
+
+  // 4D input dimensions -- depre
