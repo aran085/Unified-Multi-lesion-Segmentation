@@ -68,4 +68,6 @@ message NetParameter {
   // DEPRECATED. See InputParameter. The shape of the input blobs.
   repeated BlobShape input_shape = 8;
 
-  // 4D input dimensions -- depre
+  // 4D input dimensions -- deprecated.  Use "input_shape" instead.
+  // If specified, for each input blob there should be four
+  // values specifying th
