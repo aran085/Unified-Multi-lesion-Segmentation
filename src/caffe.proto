@@ -70,4 +70,6 @@ message NetParameter {
 
   // 4D input dimensions -- deprecated.  Use "input_shape" instead.
   // If specified, for each input blob there should be four
-  // values specifying th
+  // values specifying the num, channels, height and width of the input blob.
+  // Thus, there should be a total of (4 * #input) numbers.
+  repeated int32 inp
