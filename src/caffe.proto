@@ -63,4 +63,6 @@ message FillerParameter {
 
 message NetParameter {
   optional string name = 1; // consider giving the network a name
-  // DEPREC
+  // DEPRECATED. See InputParameter. The input blobs to the network.
+  repeated string input = 3;
+  // DEPRECATED. See InputPa
