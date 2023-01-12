@@ -80,4 +80,7 @@ message NetParameter {
   optional bool force_backward = 5 [default = false];
   // The current "state" of the network, including the phase, level, and stage.
   // Some layers may be included/excluded depending on this state and the states
-  //
+  // specified in the layers' include and exclude fields.
+  optional NetState state = 6;
+
+  // Print debugging info
