@@ -83,4 +83,6 @@ message NetParameter {
   // specified in the layers' include and exclude fields.
   optional NetState state = 6;
 
-  // Print debugging info
+  // Print debugging information about results while running Net::Forward,
+  // Net::Backward, and Net::Update.
+  optional bool debug_info = 7 [default 
