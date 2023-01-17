@@ -89,4 +89,11 @@ message NetParameter {
 
   // The layers that make up the net.  Each of their configurations, including
   // connectivity and behavior, is specified as a LayerParameter.
-  repeated LayerParameter layer = 100;  // ID 100 so layers are print
+  repeated LayerParameter layer = 100;  // ID 100 so layers are printed last.
+
+  // DEPRECATED: use 'layer' instead.
+  repeated V1LayerParameter layers = 2;
+}
+
+// NOTE
+// Update
