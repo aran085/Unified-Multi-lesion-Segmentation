@@ -96,4 +96,6 @@ message NetParameter {
 }
 
 // NOTE
-// Update
+// Update the next available ID when you add a new SolverParameter field.
+//
+// SolverParameter next availab
