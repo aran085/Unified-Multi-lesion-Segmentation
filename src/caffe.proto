@@ -100,4 +100,7 @@ message NetParameter {
 //
 // SolverParameter next available ID: 42 (last added: layer_wise_reduce)
 message SolverParameter {
-  ////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////
+  // Specifying the train and test networks
+  //
+  // Ex
