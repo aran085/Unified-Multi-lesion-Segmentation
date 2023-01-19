@@ -109,4 +109,6 @@ message SolverParameter {
   //     test_net_param, test_net, net_param, net
   // If more than one test net field is specified (e.g., both net and
   // test_net are specified), they will be evaluated in the field order given
-  // above: (1) test_net_param, (2) test_net, (3) net_p
+  // above: (1) test_net_param, (2) test_net, (3) net_param/net.
+  // A test_iter must be specified for each test_net.
+  // A test_level and/or a test_stage may
