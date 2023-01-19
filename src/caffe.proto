@@ -115,4 +115,6 @@ message SolverParameter {
   //////////////////////////////////////////////////////////////////////////////
 
   // Proto filename for the train net, possibly combined with one or more
-  // 
+  // test nets.
+  optional string net = 24;
+  // Inline train net param, possibly combined with one or more test n
