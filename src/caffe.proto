@@ -112,4 +112,7 @@ message SolverParameter {
   // above: (1) test_net_param, (2) test_net, (3) net_param/net.
   // A test_iter must be specified for each test_net.
   // A test_level and/or a test_stage may also be specified for each test_net.
-  /////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////
+
+  // Proto filename for the train net, possibly combined with one or more
+  // 
