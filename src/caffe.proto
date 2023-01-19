@@ -104,4 +104,6 @@ message SolverParameter {
   // Specifying the train and test networks
   //
   // Exactly one train net must be specified using one of the following fields:
-  //     train_ne
+  //     train_net_param, train_net, net_param, net
+  // One or more test nets may be specified using any of the following fields:
+  //     test_net_param, test
