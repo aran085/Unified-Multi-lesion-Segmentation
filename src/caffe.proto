@@ -103,4 +103,5 @@ message SolverParameter {
   //////////////////////////////////////////////////////////////////////////////
   // Specifying the train and test networks
   //
-  // Ex
+  // Exactly one train net must be specified using one of the following fields:
+  //     train_ne
