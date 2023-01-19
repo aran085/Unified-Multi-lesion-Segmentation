@@ -108,4 +108,5 @@ message SolverParameter {
   // One or more test nets may be specified using any of the following fields:
   //     test_net_param, test_net, net_param, net
   // If more than one test net field is specified (e.g., both net and
-  // test_net are specif
+  // test_net are specified), they will be evaluated in the field order given
+  // above: (1) test_net_param, (2) test_net, (3) net_p
