@@ -120,4 +120,6 @@ message SolverParameter {
   // Inline train net param, possibly combined with one or more test nets.
   optional NetParameter net_param = 25;
 
-  optional string train_net = 1; // Proto filen
+  optional string train_net = 1; // Proto filename for the train net.
+  repeated string test_net = 2; // Proto filenames for the test nets.
+  optio
