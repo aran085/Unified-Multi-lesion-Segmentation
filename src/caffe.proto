@@ -123,4 +123,9 @@ message SolverParameter {
   optional string train_net = 1; // Proto filename for the train net.
   repeated string test_net = 2; // Proto filenames for the test nets.
   optional NetParameter train_net_param = 21; // Inline train net params.
-  repeated NetParameter test_net_param = 22; /
+  repeated NetParameter test_net_param = 22; // Inline test net params.
+
+  // The states for the train/test nets. Must be unspecified or
+  // specified once per net.
+  //
+  //
