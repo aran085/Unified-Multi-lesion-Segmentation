@@ -128,4 +128,6 @@ message SolverParameter {
   // The states for the train/test nets. Must be unspecified or
   // specified once per net.
   //
-  //
+  // By default, train_state will have phase = TRAIN,
+  // and all test_state's will have phase = TEST.
+  // Other 
