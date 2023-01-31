@@ -132,4 +132,9 @@ message SolverParameter {
   // and all test_state's will have phase = TEST.
   // Other defaults are set according to the NetState defaults.
   optional NetState train_state = 26;
-  repeated NetState test_
+  repeated NetState test_state = 27;
+
+  // The number of iterations for each test net.
+  repeated int32 test_iter = 3;
+
+  // The number of iterat
