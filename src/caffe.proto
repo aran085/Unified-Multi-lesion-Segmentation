@@ -149,4 +149,5 @@ message SolverParameter {
   optional int32 display = 6;
   // Display the loss averaged over the last average_loss iterations
   optional int32 average_loss = 33 [default = 1];
-  optional int32 ma
+  optional int32 max_iter = 7; // the maximum number of iterations
+  // accumulate gradients over `iter_size` x `batc
