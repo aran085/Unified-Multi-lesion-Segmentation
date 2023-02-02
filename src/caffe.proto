@@ -156,3 +156,5 @@ message SolverParameter {
   // The learning rate decay policy. The currently implemented learning rate
   // policies are as follows:
   //    - fixed: always return base_lr.
+  //    - step: return base_lr * gamma ^ (floor(iter / step))
+  //    - exp: return base_lr * ga
