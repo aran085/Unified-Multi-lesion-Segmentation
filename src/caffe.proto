@@ -157,4 +157,6 @@ message SolverParameter {
   // policies are as follows:
   //    - fixed: always return base_lr.
   //    - step: return base_lr * gamma ^ (floor(iter / step))
-  //    - exp: return base_lr * ga
+  //    - exp: return base_lr * gamma ^ iter
+  //    - inv: return base_lr * (1 + gamma * iter) ^ (- power)
+  //    - multistep:
