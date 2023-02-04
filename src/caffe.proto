@@ -159,4 +159,6 @@ message SolverParameter {
   //    - step: return base_lr * gamma ^ (floor(iter / step))
   //    - exp: return base_lr * gamma ^ iter
   //    - inv: return base_lr * (1 + gamma * iter) ^ (- power)
-  //    - multistep:
+  //    - multistep: similar to step but it allows non uniform steps defined by
+  //      stepvalue
+  //    - poly: th
