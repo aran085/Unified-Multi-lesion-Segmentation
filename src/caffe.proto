@@ -161,4 +161,5 @@ message SolverParameter {
   //    - inv: return base_lr * (1 + gamma * iter) ^ (- power)
   //    - multistep: similar to step but it allows non uniform steps defined by
   //      stepvalue
-  //    - poly: th
+  //    - poly: the effective learning rate follows a polynomial decay, to be
+  //      zero by the max_iter. return base_lr (1 -
