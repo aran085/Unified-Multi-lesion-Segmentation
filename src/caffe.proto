@@ -164,4 +164,6 @@ message SolverParameter {
   //    - poly: the effective learning rate follows a polynomial decay, to be
   //      zero by the max_iter. return base_lr (1 - iter/max_iter) ^ (power)
   //    - sigmoid: the effective learning rate follows a sigmod decay
-  //      return base
+  //      return base_lr ( 1/(1 + exp(-gamma * (iter - stepsize))))
+  //
+  // where base_lr, max_iter, gamma, step, stepvalue a
