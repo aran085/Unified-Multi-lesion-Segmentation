@@ -170,4 +170,6 @@ message SolverParameter {
   // in the solver parameter protocol buffer, and iter is the current iteration.
   optional string lr_policy = 8;
   optional float gamma = 9; // The parameter to compute the learning rate.
-  optional float pow
+  optional float power = 10; // The parameter to compute the learning rate.
+  optional float momentum = 11; // The momentum value.
+  optional f
