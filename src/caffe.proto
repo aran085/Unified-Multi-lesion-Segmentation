@@ -168,4 +168,6 @@ message SolverParameter {
   //
   // where base_lr, max_iter, gamma, step, stepvalue and power are defined
   // in the solver parameter protocol buffer, and iter is the current iteration.
-  optional string lr_pol
+  optional string lr_policy = 8;
+  optional float gamma = 9; // The parameter to compute the learning rate.
+  optional float pow
