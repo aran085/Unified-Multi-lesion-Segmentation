@@ -172,4 +172,6 @@ message SolverParameter {
   optional float gamma = 9; // The parameter to compute the learning rate.
   optional float power = 10; // The parameter to compute the learning rate.
   optional float momentum = 11; // The momentum value.
-  optional f
+  optional float weight_decay = 12; // The weight decay.
+  // regularization types supported: L1 and L2
+  // controlled by weig
