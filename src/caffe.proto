@@ -177,3 +177,6 @@ message SolverParameter {
   // controlled by weight_decay
   optional string regularization_type = 29 [default = "L2"];
   // the stepsize for learning rate policy "step"
+  optional int32 stepsize = 13;
+  // the stepsize for learning rate policy "multistep"
+  repeated int32 stepvalue = 34;
