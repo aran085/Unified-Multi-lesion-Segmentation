@@ -183,4 +183,7 @@ message SolverParameter {
 
   // Set clip_gradients to >= 0 to clip parameter gradients to that L2 norm,
   // whenever their actual L2 norm is larger.
-  optional float cli
+  optional float clip_gradients = 35 [default = -1];
+
+  optional int32 snapshot = 14 [default = 0]; // The snapshot interval
+  opt
