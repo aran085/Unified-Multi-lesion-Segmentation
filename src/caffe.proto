@@ -192,4 +192,7 @@ message SolverParameter {
   optional bool snapshot_diff = 16 [default = false];
   enum SnapshotFormat {
     HDF5 = 0;
-    B
+    BINARYPROTO = 1;
+  }
+  optional SnapshotFormat snapshot_format = 37 [default = BINARYPROTO];
+  // the mode solv
