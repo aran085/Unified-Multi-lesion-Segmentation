@@ -186,4 +186,5 @@ message SolverParameter {
   optional float clip_gradients = 35 [default = -1];
 
   optional int32 snapshot = 14 [default = 0]; // The snapshot interval
-  opt
+  optional string snapshot_prefix = 15; // The prefix for the snapshot.
+  // whether to snapshot diff in the re
