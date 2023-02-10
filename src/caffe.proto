@@ -188,4 +188,8 @@ message SolverParameter {
   optional int32 snapshot = 14 [default = 0]; // The snapshot interval
   optional string snapshot_prefix = 15; // The prefix for the snapshot.
   // whether to snapshot diff in the results or not. Snapshotting diff will help
-  // debugging but the final protocol buffer size will be m
+  // debugging but the final protocol buffer size will be much larger.
+  optional bool snapshot_diff = 16 [default = false];
+  enum SnapshotFormat {
+    HDF5 = 0;
+    B
