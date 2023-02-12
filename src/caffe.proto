@@ -200,4 +200,5 @@ message SolverParameter {
     CPU = 0;
     GPU = 1;
   }
-  opti
+  optional SolverMode solver_mode = 17 [default = GPU];
+  // the device_id will that be used in GPU mode. Use device
