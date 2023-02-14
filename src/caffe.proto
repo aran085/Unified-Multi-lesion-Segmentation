@@ -211,4 +211,6 @@ message SolverParameter {
   // type of the solver
   optional string type = 40 [default = "SGD"];
 
-  // numeri
+  // numerical stability for RMSProp, AdaGrad and AdaDelta and Adam
+  optional float delta = 31 [default = 1e-8];
+  // parameters for 
