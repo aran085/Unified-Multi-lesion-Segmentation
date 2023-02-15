@@ -217,4 +217,5 @@ message SolverParameter {
   optional float momentum2 = 39 [default = 0.999];
 
   // RMSProp decay value
-  // MeanSquar
+  // MeanSquare(t) = rms_decay*MeanSquare(t-1) + (1-rms_decay)*SquareGradient(t)
+  optional float rms_decay = 38 
