@@ -221,4 +221,7 @@ message SolverParameter {
   optional float rms_decay = 38 [default = 0.99];
 
   // If true, print information about the state of the net that may help with
-  // debugging lea
+  // debugging learning problems.
+  optional bool debug_info = 23 [default = false];
+
+  // If false, don't save a snapshot after
