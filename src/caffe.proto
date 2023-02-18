@@ -227,4 +227,9 @@ message SolverParameter {
   // If false, don't save a snapshot after training finishes.
   optional bool snapshot_after_train = 28 [default = true];
 
-  // DEPRECATED: old solver en
+  // DEPRECATED: old solver enum types, use string instead
+  enum SolverType {
+    SGD = 0;
+    NESTEROV = 1;
+    ADAGRAD = 2;
+  
