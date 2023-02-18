@@ -258,4 +258,9 @@ enum Phase {
 
 message NetState {
   optional Phase phase = 1 [default = TEST];
-  optional in
+  optional int32 level = 2 [default = 0];
+  repeated string stage = 3;
+}
+
+message NetStateRule {
+  // Set phase to require 
