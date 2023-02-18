@@ -251,4 +251,11 @@ message SolverState {
   optional int32 current_step = 4 [default = 0]; // The current step for learning rate
 }
 
-enum Phase
+enum Phase {
+   TRAIN = 0;
+   TEST = 1;
+}
+
+message NetState {
+  optional Phase phase = 1 [default = TEST];
+  optional in
