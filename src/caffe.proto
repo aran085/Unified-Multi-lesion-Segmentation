@@ -246,4 +246,5 @@ message SolverParameter {
 // A message that stores the solver snapshots
 message SolverState {
   optional int32 iter = 1; // The current iteration
-  optional string learned_ne
+  optional string learned_net = 2; // The file that stores the learned net.
+  repeated BlobProto history = 3; // The history for s
