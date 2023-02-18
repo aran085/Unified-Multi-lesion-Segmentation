@@ -243,4 +243,7 @@ message SolverParameter {
   optional bool layer_wise_reduce = 41 [default = true];
 }
 
-// A message that stores the solver snapsh
+// A message that stores the solver snapshots
+message SolverState {
+  optional int32 iter = 1; // The current iteration
+  optional string learned_ne
