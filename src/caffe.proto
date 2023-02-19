@@ -267,4 +267,5 @@ message NetStateRule {
   // to meet this rule.
   optional Phase phase = 1;
 
-  // Set t
+  // Set the minimum and/or maximum levels in which the layer should be used.
+  // Leave undefined to m
