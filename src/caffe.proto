@@ -272,4 +272,5 @@ message NetStateRule {
   optional int32 min_level = 2;
   optional int32 max_level = 3;
 
-  // Customizable sets of 
+  // Customizable sets of stages to include or exclude.
+  // The net must have ALL of the specified stages and NONE of the s
