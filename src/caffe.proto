@@ -280,4 +280,7 @@ message NetStateRule {
   repeated string not_stage = 5;
 }
 
-// Specifies training parameters (
+// Specifies training parameters (multipliers on global learning constants,
+// and the name and other settings used for weight sharing).
+message ParamSpec {
+  //
