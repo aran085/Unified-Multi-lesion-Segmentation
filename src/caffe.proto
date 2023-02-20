@@ -284,4 +284,5 @@ message NetStateRule {
 // and the name and other settings used for weight sharing).
 message ParamSpec {
   // The names of the parameter blobs -- useful for sharing parameters among
-  // layers,
+  // layers, but never required otherwise.  To share a parameter between two
+  // layers, give it a (non-empty) name.
