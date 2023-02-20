@@ -283,4 +283,5 @@ message NetStateRule {
 // Specifies training parameters (multipliers on global learning constants,
 // and the name and other settings used for weight sharing).
 message ParamSpec {
-  //
+  // The names of the parameter blobs -- useful for sharing parameters among
+  // layers,
