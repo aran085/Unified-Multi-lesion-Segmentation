@@ -289,4 +289,7 @@ message ParamSpec {
   optional string name = 1;
 
   // Whether to require shared weights to have the same shape, or just the same
-  // count -
+  // count -- defaults to STRICT if unspecified.
+  optional DimCheckMode share_mode = 2;
+  enum DimCheckMode {
+    // STRICT (defaul
