@@ -302,4 +302,8 @@ message ParamSpec {
   optional float lr_mult = 3 [default = 1.0];
 
   // The multiplier on the global weight decay for this parameter.
-  
+  optional float decay_mult = 4 [default = 1.0];
+}
+
+// NOTE
+// Update the next available ID when you add a new LayerPara
