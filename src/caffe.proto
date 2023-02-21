@@ -294,4 +294,9 @@ message ParamSpec {
   enum DimCheckMode {
     // STRICT (default) requires that num, channels, height, width each match.
     STRICT = 0;
-    // PERMISSIVE requires only the count (num*chan
+    // PERMISSIVE requires only the count (num*channels*height*width) to match.
+    PERMISSIVE = 1;
+  }
+
+  // The multiplier on the global learning rate for this parameter.
+  op
