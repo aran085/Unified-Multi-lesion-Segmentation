@@ -299,4 +299,7 @@ message ParamSpec {
   }
 
   // The multiplier on the global learning rate for this parameter.
-  op
+  optional float lr_mult = 3 [default = 1.0];
+
+  // The multiplier on the global weight decay for this parameter.
+  
