@@ -292,4 +292,6 @@ message ParamSpec {
   // count -- defaults to STRICT if unspecified.
   optional DimCheckMode share_mode = 2;
   enum DimCheckMode {
-    // STRICT (defaul
+    // STRICT (default) requires that num, channels, height, width each match.
+    STRICT = 0;
+    // PERMISSIVE requires only the count (num*chan
