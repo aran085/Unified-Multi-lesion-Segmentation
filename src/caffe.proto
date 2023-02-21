@@ -310,4 +310,6 @@ message ParamSpec {
 //
 // LayerParameter next available layer-specific ID: 147 (last added: recurrent_param)
 message LayerParameter {
- 
+  optional string name = 1; // the layer name
+  optional string type = 2; // the layer type
+  repeated stri
