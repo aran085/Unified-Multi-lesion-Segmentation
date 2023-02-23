@@ -331,4 +331,6 @@ message LayerParameter {
   repeated BlobProto blobs = 7;
 
   // Specifies whether to backpropagate to each bottom. If unspecified,
-  // Caffe will automatically infer whether each i
+  // Caffe will automatically infer whether each input needs backpropagation
+  // to compute parameter gradients. If set to true for some inputs,
+  // ba
