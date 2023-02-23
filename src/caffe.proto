@@ -327,4 +327,7 @@ message LayerParameter {
   // and the name and other settings used for weight sharing).
   repeated ParamSpec param = 6;
 
-  // The blobs
+  // The blobs containing the numeric parameters of the layer.
+  repeated BlobProto blobs = 7;
+
+  // Specifies wheth
