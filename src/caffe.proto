@@ -333,4 +333,5 @@ message LayerParameter {
   // Specifies whether to backpropagate to each bottom. If unspecified,
   // Caffe will automatically infer whether each input needs backpropagation
   // to compute parameter gradients. If set to true for some inputs,
-  // ba
+  // backpropagation to those inputs is forced; if set false for some inputs,
+  // backpropagation to those inputs is 
