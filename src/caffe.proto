@@ -330,4 +330,5 @@ message LayerParameter {
   // The blobs containing the numeric parameters of the layer.
   repeated BlobProto blobs = 7;
 
-  // Specifies wheth
+  // Specifies whether to backpropagate to each bottom. If unspecified,
+  // Caffe will automatically infer whether each i
