@@ -323,4 +323,8 @@ message LayerParameter {
   // to each top blob.
   repeated float loss_weight = 5;
 
-  // Specifies training parameters (multipliers on global learning cons
+  // Specifies training parameters (multipliers on global learning constants,
+  // and the name and other settings used for weight sharing).
+  repeated ParamSpec param = 6;
+
+  // The blobs
