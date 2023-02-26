@@ -340,4 +340,5 @@ message LayerParameter {
   repeated bool propagate_down = 11;
 
   // Rules controlling whether and when a layer is included in the network,
-  // based on the cu
+  // based on the current NetState.  You may specify a non-zero number of rules
+  // to include OR exclude, b
