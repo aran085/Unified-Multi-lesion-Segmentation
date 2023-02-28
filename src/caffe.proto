@@ -342,4 +342,6 @@ message LayerParameter {
   // Rules controlling whether and when a layer is included in the network,
   // based on the current NetState.  You may specify a non-zero number of rules
   // to include OR exclude, but not both.  If no include or exclude rules are
-  // specified, the layer is always included.  If the current 
+  // specified, the layer is always included.  If the current NetState meets
+  // ANY (i.e., one or more) of the specified rules, the layer is
+  // included/exclud
