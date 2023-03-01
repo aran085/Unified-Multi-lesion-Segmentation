@@ -361,4 +361,6 @@ message LayerParameter {
   // engine parameter for selecting the implementation.
   // The default for the engine is set by the ENGINE switch at compile-time.
   optional AccuracyParameter accuracy_param = 102;
-  optional A
+  optional ArgMaxParameter argmax_param = 103;
+  optional BatchNormParameter batch_norm_param = 139;
+  optional BiasParameter bias_p
