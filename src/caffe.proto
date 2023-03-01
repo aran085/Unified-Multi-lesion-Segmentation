@@ -344,4 +344,8 @@ message LayerParameter {
   // to include OR exclude, but not both.  If no include or exclude rules are
   // specified, the layer is always included.  If the current NetState meets
   // ANY (i.e., one or more) of the specified rules, the layer is
-  // included/exclud
+  // included/excluded.
+  repeated NetStateRule include = 8;
+  repeated NetStateRule exclude = 9;
+
+  // Param
