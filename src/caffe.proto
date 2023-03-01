@@ -357,4 +357,6 @@ message LayerParameter {
   // Layer type-specific parameters.
   //
   // Note: certain layers may have more than one computational engine
-  // for their implementation. These layers incl
+  // for their implementation. These layers include an Engine type and
+  // engine parameter for selecting the implementation.
+  // The default for th
