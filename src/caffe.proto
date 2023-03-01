@@ -367,4 +367,7 @@ message LayerParameter {
   optional ConcatParameter concat_param = 104;
   optional ContrastiveLossParameter contrastive_loss_param = 105;
   optional ConvolutionParameter convolution_param = 106;
-  optional CropParameter crop_param = 1
+  optional CropParameter crop_param = 144;
+  optional DataParameter data_param = 107;
+  optional DropoutParameter dropout_param = 108;
+  optional DummyDataParamet
