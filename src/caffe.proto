@@ -365,4 +365,6 @@ message LayerParameter {
   optional BatchNormParameter batch_norm_param = 139;
   optional BiasParameter bias_param = 141;
   optional ConcatParameter concat_param = 104;
-  optional ContrastiveLossParameter contrastiv
+  optional ContrastiveLossParameter contrastive_loss_param = 105;
+  optional ConvolutionParameter convolution_param = 106;
+  optional CropParameter crop_param = 1
