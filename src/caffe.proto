@@ -348,4 +348,7 @@ message LayerParameter {
   repeated NetStateRule include = 8;
   repeated NetStateRule exclude = 9;
 
-  // Param
+  // Parameters for data pre-processing.
+  optional TransformationParameter transform_param = 100;
+
+  // Parameters shared by lo
