@@ -381,4 +381,6 @@ message LayerParameter {
   optional HingeLossParameter hinge_loss_param = 114;
   optional ImageDataParameter image_data_param = 115;
   optional InfogainLossParameter infogain_loss_param = 116;
-  optional InnerP
+  optional InnerProductParameter inner_product_param = 117;
+  optional InputParameter input_param = 143;
+  optional LogPar
