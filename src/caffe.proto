@@ -414,3 +414,8 @@ message MCBSCELossParameter {
 	optional float  ratio = 2 [default = 1.0];
 	optional uint32 key = 3 [default = 10];
 }
+
+
+// Message that stores parameters used to apply transformation
+// to the data layer's data
+message Trans
