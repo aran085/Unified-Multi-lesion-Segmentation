@@ -418,4 +418,6 @@ message MCBSCELossParameter {
 
 // Message that stores parameters used to apply transformation
 // to the data layer's data
-message Trans
+message TransformationParameter {
+  // For data pre-processing, we can do simple scaling and subtracting the
+  // dat
