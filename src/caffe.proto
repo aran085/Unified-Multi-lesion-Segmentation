@@ -397,4 +397,6 @@ message LayerParameter {
   optional ReLUParameter relu_param = 123;
   optional ReshapeParameter reshape_param = 133;
   optional ScaleParameter scale_param = 142;
-  option
+  optional SigmoidParameter sigmoid_param = 124;
+  optional SoftmaxParameter softmax_param = 125;
+  optional SPPParam
