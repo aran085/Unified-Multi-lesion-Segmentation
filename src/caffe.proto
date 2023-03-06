@@ -422,4 +422,6 @@ message TransformationParameter {
   // For data pre-processing, we can do simple scaling and subtracting the
   // data mean, if provided. Note that the mean subtraction is always carried
   // out before scaling.
-  optional
+  optional float scale = 1 [default = 1];
+  // Specify if we want to randomly mirror data.
+  optional bool
