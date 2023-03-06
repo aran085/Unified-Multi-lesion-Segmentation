@@ -436,4 +436,5 @@ message TransformationParameter {
   // Force the decoded image to have 3 color channels.
   optional bool force_color = 6 [default = false];
   // Force the decoded image to have 1 color channels.
-  o
+  optional bool force_gray = 7 [default = false];
+  // If we want to do data augmentation, Scaling factor for rand
