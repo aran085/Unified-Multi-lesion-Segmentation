@@ -420,4 +420,6 @@ message MCBSCELossParameter {
 // to the data layer's data
 message TransformationParameter {
   // For data pre-processing, we can do simple scaling and subtracting the
-  // dat
+  // data mean, if provided. Note that the mean subtraction is always carried
+  // out before scaling.
+  optional
