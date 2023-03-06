@@ -424,4 +424,6 @@ message TransformationParameter {
   // out before scaling.
   optional float scale = 1 [default = 1];
   // Specify if we want to randomly mirror data.
-  optional bool
+  optional bool mirror = 2 [default = false];
+  // Specify if we would like to randomly crop an image.
+  optional uint32 crop_size = 3 [d
