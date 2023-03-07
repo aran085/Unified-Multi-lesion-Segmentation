@@ -440,4 +440,6 @@ message TransformationParameter {
   // If we want to do data augmentation, Scaling factor for randomly scaling input images
   repeated float scale_factors = 8;
   // the width for cropped region
-  optional uint32
+  optional uint32 crop_width = 9 [default = 0];
+  // the height for cropped region
+  optional uint32 crop_height = 10 [default = 0];
