@@ -455,4 +455,7 @@ message LossParameter {
   // SoftmaxWithLoss and SigmoidCrossEntropyLoss layers.
   enum NormalizationMode {
     // Divide by the number of examples in the batch times spatial dimensions.
-    // Outputs that receive the ignore label will NOT be i
+    // Outputs that receive the ignore label will NOT be ignored in computing
+    // the normalization factor.
+    FULL = 0;
+    // Divide by the total num
