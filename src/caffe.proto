@@ -454,4 +454,5 @@ message LossParameter {
   // spatial dimensions, or other dimensions.  Currently only implemented in
   // SoftmaxWithLoss and SigmoidCrossEntropyLoss layers.
   enum NormalizationMode {
-    // Divide by the number 
+    // Divide by the number of examples in the batch times spatial dimensions.
+    // Outputs that receive the ignore label will NOT be i
