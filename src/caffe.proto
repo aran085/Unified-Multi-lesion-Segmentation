@@ -467,4 +467,6 @@ message LossParameter {
     NONE = 3;
   }
   // For historical reasons, the default normalization for
-  // SigmoidCrossEntropyLoss is BATCH
+  // SigmoidCrossEntropyLoss is BATCH_SIZE and *not* VALID.
+  optional NormalizationMode normalization = 3 [default = VALID];
+  // Deprecated.  Ignored if nor
