@@ -464,4 +464,7 @@ message LossParameter {
     // Divide by the batch size.
     BATCH_SIZE = 2;
     // Do not normalize the loss.
-    N
+    NONE = 3;
+  }
+  // For historical reasons, the default normalization for
+  // SigmoidCrossEntropyLoss is BATCH
