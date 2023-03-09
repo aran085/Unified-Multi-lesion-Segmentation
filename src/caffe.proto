@@ -479,4 +479,6 @@ message LossParameter {
 // alphabetical order.
 
 message AccuracyParameter {
-  // When computing accuracy, count as correct by compa
+  // When computing accuracy, count as correct by comparing the true label to
+  // the top k scoring classes.  By default, only compare to the top scoring
+  // class (
