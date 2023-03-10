@@ -484,4 +484,6 @@ message AccuracyParameter {
   // class (i.e. argmax).
   optional uint32 top_k = 1 [default = 1];
 
-  // The "label" axis of the prediction blob
+  // The "label" axis of the prediction blob, whose argmax corresponds to the
+  // predicted label -- may be negative to index from the end (e.g., -1 for the
+ 
