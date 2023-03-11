@@ -492,4 +492,9 @@ message AccuracyParameter {
   optional int32 axis = 2 [default = 1];
 
   // If specified, ignore instances with the given label.
-  optional int32 ignore_
+  optional int32 ignore_label = 3;
+}
+
+message ArgMaxParameter {
+  // If true produce pairs (argmax, maxval)
+  optional bool out_m
