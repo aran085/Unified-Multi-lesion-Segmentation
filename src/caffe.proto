@@ -503,4 +503,8 @@ message ArgMaxParameter {
   // end (e.g., -1 for the last axis).
   // By default ArgMaxLayer maximizes over the flattened trailing dimensions
   // for each index of the first / num dimension.
-  optiona
+  optional int32 axis = 3;
+}
+
+message ConcatParameter {
+  // The axis along which to concatenate -- may be negativ
