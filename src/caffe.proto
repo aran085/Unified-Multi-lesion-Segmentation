@@ -501,4 +501,6 @@ message ArgMaxParameter {
   optional uint32 top_k = 2 [default = 1];
   // The axis along which to maximise -- may be negative to index from the
   // end (e.g., -1 for the last axis).
-  // By default ArgMax
+  // By default ArgMaxLayer maximizes over the flattened trailing dimensions
+  // for each index of the first / num dimension.
+  optiona
