@@ -509,4 +509,6 @@ message ArgMaxParameter {
 message ConcatParameter {
   // The axis along which to concatenate -- may be negative to index from the
   // end (e.g., -1 for the last axis).  Other axes must have the
-  // same dimension for all the
+  // same dimension for all the bottom blobs.
+  // By default, ConcatLayer concatenates blobs along the "channels" axis (1).
+  optional
