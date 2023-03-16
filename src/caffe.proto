@@ -514,4 +514,8 @@ message ConcatParameter {
   optional int32 axis = 2 [default = 1];
 
   // DEPRECATED: alias for "axis" -- does not support negative indexing.
-  optional ui
+  optional uint32 concat_dim = 1 [default = 1];
+}
+
+message BatchNormParameter {
+  // If false, normalization is performed over 
