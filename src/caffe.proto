@@ -523,4 +523,5 @@ message BatchNormParameter {
   // average.
   // If true, those accumulated mean and variance values are used for the
   // normalization.
-  // By default, it is se
+  // By default, it is set to false when the network is in the training
+  // phase and true when the network is in the testing 
