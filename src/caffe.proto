@@ -521,4 +521,6 @@ message BatchNormParameter {
   // If false, normalization is performed over the current mini-batch
   // and global statistics are accumulated (but not yet used) by a moving
   // average.
-  // If t
+  // If true, those accumulated mean and variance values are used for the
+  // normalization.
+  // By default, it is se
