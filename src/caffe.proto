@@ -518,4 +518,7 @@ message ConcatParameter {
 }
 
 message BatchNormParameter {
-  // If false, normalization is performed over 
+  // If false, normalization is performed over the current mini-batch
+  // and global statistics are accumulated (but not yet used) by a moving
+  // average.
+  // If t
