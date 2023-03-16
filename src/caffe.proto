@@ -524,4 +524,7 @@ message BatchNormParameter {
   // If true, those accumulated mean and variance values are used for the
   // normalization.
   // By default, it is set to false when the network is in the training
-  // phase and true when the network is in the testing 
+  // phase and true when the network is in the testing phase.
+  optional bool use_global_stats = 1;
+  // What fraction of the moving average remains each iteration?
+  /
