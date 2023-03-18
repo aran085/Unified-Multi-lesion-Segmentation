@@ -529,4 +529,6 @@ message BatchNormParameter {
   // What fraction of the moving average remains each iteration?
   // Smaller values make the moving average decay faster, giving more
   // weight to the recent values.
-  // Each iteration upda
+  // Each iteration updates the moving average @f$S_{t-1}@f$ with the
+  // current mean @f$ Y_t @f$ by
+  // @f$ S_t = (1-\beta)Y_
