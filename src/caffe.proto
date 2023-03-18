@@ -531,4 +531,6 @@ message BatchNormParameter {
   // weight to the recent values.
   // Each iteration updates the moving average @f$S_{t-1}@f$ with the
   // current mean @f$ Y_t @f$ by
-  // @f$ S_t = (1-\beta)Y_
+  // @f$ S_t = (1-\beta)Y_t + \beta \cdot S_{t-1} @f$, where @f$ \beta @f$
+  // is the moving_average_fraction parameter.
+  optional
