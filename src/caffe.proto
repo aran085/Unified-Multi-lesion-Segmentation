@@ -527,4 +527,6 @@ message BatchNormParameter {
   // phase and true when the network is in the testing phase.
   optional bool use_global_stats = 1;
   // What fraction of the moving average remains each iteration?
-  /
+  // Smaller values make the moving average decay faster, giving more
+  // weight to the recent values.
+  // Each iteration upda
