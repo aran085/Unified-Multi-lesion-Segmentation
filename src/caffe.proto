@@ -546,4 +546,6 @@ message BiasParameter {
   //
   // For example, if bottom[0] is 4D with shape 100x3x40x60, the output
   // top[0] will have the same shape, and bottom[1] may have any of the
-  // following shapes 
+  // following shapes (for the given value of axis):
+  //    (axis == 0 == -4) 100; 100x3; 100x3x40; 100x3x40x60
+  //    (
