@@ -541,4 +541,7 @@ message BatchNormParameter {
 
 message BiasParameter {
   // The first axis of bottom[0] (the first input Blob) along which to apply
-  // bottom[1] (the second input Blob).  May be negat
+  // bottom[1] (the second input Blob).  May be negative to index from the end
+  // (e.g., -1 for the last axis).
+  //
+  // For example, if bottom[0] is 4D with shape 100x3x40x60, th
