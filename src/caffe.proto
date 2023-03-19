@@ -540,4 +540,5 @@ message BatchNormParameter {
 }
 
 message BiasParameter {
-  // The first axi
+  // The first axis of bottom[0] (the first input Blob) along which to apply
+  // bottom[1] (the second input Blob).  May be negat
