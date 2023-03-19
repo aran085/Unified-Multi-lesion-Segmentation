@@ -533,4 +533,5 @@ message BatchNormParameter {
   // current mean @f$ Y_t @f$ by
   // @f$ S_t = (1-\beta)Y_t + \beta \cdot S_{t-1} @f$, where @f$ \beta @f$
   // is the moving_average_fraction parameter.
-  optional
+  optional float moving_average_fraction = 2 [default = .999];
+  // Small value to add to the variance estimate so th
