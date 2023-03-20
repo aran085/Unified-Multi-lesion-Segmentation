@@ -558,4 +558,5 @@ message BiasParameter {
   // (num_axes is ignored unless just one bottom is given and the bias is
   // a learned parameter of the layer.  Otherwise, num_axes is determined by the
   // number of axes by the second bottom.)
- 
+  // The number of axes of the input (bottom[0]) covered by the bias
+  // parameter, or -1 to cover
