@@ -553,4 +553,7 @@ message BiasParameter {
   //    (axis == 3 == -1)                                60
   // Furthermore, bottom[1] may have the empty shape (regardless of the value of
   // "axis") -- a scalar bias.
-  optional int32 axis = 1 [
+  optional int32 axis = 1 [default = 1];
+
+  // (num_axes is ignored unless just one bottom is given and the bias is
+  // a learn
