@@ -563,4 +563,7 @@ message BiasParameter {
   // Set num_axes := 0, to add a zero-axis Blob: a scalar.
   optional int32 num_axes = 2 [default = 1];
 
-  // (filler is ignored unless just one bottom is given and the bias
+  // (filler is ignored unless just one bottom is given and the bias is
+  // a learned parameter of the layer.)
+  // The initialization for the learned bias parameter.
+  // D
