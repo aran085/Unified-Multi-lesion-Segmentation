@@ -566,4 +566,5 @@ message BiasParameter {
   // (filler is ignored unless just one bottom is given and the bias is
   // a learned parameter of the layer.)
   // The initialization for the learned bias parameter.
-  // D
+  // Default is the zero (0) initialization, resulting in the BiasLayer
+  // initially performing the iden
