@@ -556,4 +556,6 @@ message BiasParameter {
   optional int32 axis = 1 [default = 1];
 
   // (num_axes is ignored unless just one bottom is given and the bias is
-  // a learn
+  // a learned parameter of the layer.  Otherwise, num_axes is determined by the
+  // number of axes by the second bottom.)
+ 
