@@ -567,4 +567,9 @@ message BiasParameter {
   // a learned parameter of the layer.)
   // The initialization for the learned bias parameter.
   // Default is the zero (0) initialization, resulting in the BiasLayer
-  // initially performing the iden
+  // initially performing the identity operation.
+  optional FillerParameter filler = 3;
+}
+
+message ContrastiveLossParameter {
+  // marg
