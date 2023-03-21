@@ -579,4 +579,8 @@ message ContrastiveLossParameter {
   // legacy_version = false (the default) uses (margin - d)^2 as proposed in the
   // Hadsell paper. New models should probably use this version.
   // legacy_version = true uses (margin - d^2). This is kept to support /
-  // reprodu
+  // reproduce existing models and results
+  optional bool legacy_version = 2 [default = false];
+}
+
+message ConvolutionPara
