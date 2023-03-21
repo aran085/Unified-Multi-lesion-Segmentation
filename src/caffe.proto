@@ -576,4 +576,5 @@ message ContrastiveLossParameter {
   optional float margin = 1 [default = 1.0];
   // The first implementation of this cost did not exactly match the cost of
   // Hadsell et al 2006 -- using (margin - d^2) instead of (margin - d)^2.
-  // l
+  // legacy_version = false (the default) uses (margin - d)^2 as proposed in the
+  // Hadsell paper. New models should probably
