@@ -593,4 +593,5 @@ message ConvolutionParameter {
   repeated uint32 kernel_size = 4; // The kernel size
   repeated uint32 stride = 6; // The stride; defaults to 1
   // Factor used to dilate the kernel, (implicitly) zero-filling the resulting
-  //
+  // holes. (Kernel dilation is sometimes referred to by its use in the
+  // algorithme à trous from Holschneider et al. 19
