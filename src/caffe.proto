@@ -599,4 +599,6 @@ message ConvolutionParameter {
 
   // For 2D convolution only, the *_h and *_w versions may also be used to
   // specify both spatial dimensions.
-  optional uint32 pad_h =
+  optional uint32 pad_h = 9 [default = 0]; // The padding height (2D only)
+  optional uint32 pad_w = 10 [default = 0]; // The padding width (2D only)
+  
