@@ -604,4 +604,6 @@ message ConvolutionParameter {
   optional uint32 kernel_h = 11; // The kernel height (2D only)
   optional uint32 kernel_w = 12; // The kernel width (2D only)
   optional uint32 stride_h = 13; // The stride height (2D only)
-  o
+  optional uint32 stride_w = 14; // The stride width (2D only)
+
+  optional uint32 group = 5 [default = 1]; // The group s
