@@ -609,4 +609,8 @@ message ConvolutionParameter {
   optional uint32 group = 5 [default = 1]; // The group size for group conv
 
   optional FillerParameter weight_filler = 7; // The filler for the weight
-  optional Fill
+  optional FillerParameter bias_filler = 8; // The filler for the bias
+  enum Engine {
+    DEFAULT = 0;
+    CAFFE = 1;
+  
