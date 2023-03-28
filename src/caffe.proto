@@ -613,4 +613,8 @@ message ConvolutionParameter {
   enum Engine {
     DEFAULT = 0;
     CAFFE = 1;
-  
+    CUDNN = 2;
+  }
+  optional Engine engine = 15 [default = DEFAULT];
+
+  // The axis to interpret 
