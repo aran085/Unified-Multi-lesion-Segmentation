@@ -628,4 +628,6 @@ message ConvolutionParameter {
   // filters across the spatial axes (D, H, W) of the input.
   optional int32 axis = 16 [default = 1];
 
-  // Whether to force use of the general ND convolution, even if a s
+  // Whether to force use of the general ND convolution, even if a specific
+  // implementation for blobs of the appropriate number of spatial dimensions
+  // is available. (C
