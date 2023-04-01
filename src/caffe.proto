@@ -622,4 +622,6 @@ message ConvolutionParameter {
   // succeeding dimensions are treated as "spatial".
   // With (N, C, H, W) inputs, and axis == 1 (the default), we perform
   // N independent 2D convolutions, sliding C-channel (or (C/g)-channels, for
-  // groups g>1) filters
+  // groups g>1) filters across the spatial axes (H, W) of the input.
+  // With (N, C, D, H, W) inputs, and axis == 1, we perform
+  
