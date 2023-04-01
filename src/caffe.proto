@@ -625,4 +625,7 @@ message ConvolutionParameter {
   // groups g>1) filters across the spatial axes (H, W) of the input.
   // With (N, C, D, H, W) inputs, and axis == 1, we perform
   // N independent 3D convolutions, sliding (C/g)-channels
-  // filters across the spatial axes (D, H, W) of the input
+  // filters across the spatial axes (D, H, W) of the input.
+  optional int32 axis = 16 [default = 1];
+
+  // Whether to force use of the general ND convolution, even if a s
