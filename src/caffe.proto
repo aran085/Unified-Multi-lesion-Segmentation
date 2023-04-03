@@ -630,4 +630,5 @@ message ConvolutionParameter {
 
   // Whether to force use of the general ND convolution, even if a specific
   // implementation for blobs of the appropriate number of spatial dimensions
-  // is available. (C
+  // is available. (Currently, there is only a 2D-specific convolution
+  // implementation; for input blobs with num_axes != 2, this 
