@@ -636,4 +636,5 @@ message ConvolutionParameter {
   optional bool force_nd_im2col = 17 [default = false];
 }
 
-mess
+message CropParameter {
+  // To crop, elements of the first bottom are selected to fit the dimensions
