@@ -638,3 +638,5 @@ message ConvolutionParameter {
 
 message CropParameter {
   // To crop, elements of the first bottom are selected to fit the dimensions
+  // of the second, reference bottom. The crop is configured by
+  // - the crop `axis` to pick the dimensions for 
