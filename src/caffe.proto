@@ -665,4 +665,5 @@ message DataParameter {
   optional uint32 batch_size = 4;
   // The rand_skip variable is for the data layer to skip a few data points
   // to avoid all asynchronous sgd clients to start at the same point. The skip
-  // point 
+  // point would be set as rand_skip * rand(0,1). Note that rand_skip should not
+  // be larger than the number o
