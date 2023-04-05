@@ -644,4 +644,5 @@ message CropParameter {
   // to align the cropped bottom with the reference bottom.
   // All dimensions up to but excluding `axis` are preserved, while
   // the dimensions including and trailing `axis` are cropped.
-  // If only one `offset` is set, then all 
+  // If only one `offset` is set, then all dimensions are offset by this amount.
+  // Otherwise, the number of offsets must equal the number of
