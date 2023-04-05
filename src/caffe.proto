@@ -647,4 +647,6 @@ message CropParameter {
   // If only one `offset` is set, then all dimensions are offset by this amount.
   // Otherwise, the number of offsets must equal the number of cropped axes to
   // shift the crop in each dimension accordingly.
-  // Note: standard dimensions are N,
+  // Note: standard dimensions are N,C,H,W so the default is a spatial crop,
+  // and `axis` may be negative to index from the end (e.g., -1 for the last
+  
