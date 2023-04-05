@@ -643,4 +643,5 @@ message CropParameter {
   // - the crop `offset` to set the shift for all/each dimension
   // to align the cropped bottom with the reference bottom.
   // All dimensions up to but excluding `axis` are preserved, while
-  // the dimen
+  // the dimensions including and trailing `axis` are cropped.
+  // If only one `offset` is set, then all 
