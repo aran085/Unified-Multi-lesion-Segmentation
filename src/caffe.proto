@@ -678,4 +678,6 @@ message DataParameter {
   // DEPRECATED. See TransformationParameter. Specify if we would like to randomly
   // crop an image.
   optional uint32 crop_size = 5 [default = 0];
-  // DEPRECATED. See TransformationParame
+  // DEPRECATED. See TransformationParameter. Specify if we want to randomly mirror
+  // data.
+  optional bool mirror = 6 [default = f
