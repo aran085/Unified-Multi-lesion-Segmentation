@@ -682,4 +682,6 @@ message DataParameter {
   // data.
   optional bool mirror = 6 [default = false];
   // Force the encoded image to have 3 color channels
-  optional bool force_encoded_color
+  optional bool force_encoded_color = 9 [default = false];
+  // Prefetch queue (Increase if data feeding bandwidth varies, within the
+  // limit of device me
