@@ -726,4 +726,6 @@ message EltwiseParameter {
 }
 
 // Message that stores parameters used by ELULayer
-mes
+message ELUParameter {
+  // Described in:
+  // Clevert, D.-A., Unterthiner, T., & Hochreiter, S. (2015). Fast and 
