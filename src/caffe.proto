@@ -704,4 +704,7 @@ message DummyDataParameter {
   repeated FillerParameter data_filler = 1;
   repeated BlobShape shape = 6;
 
-  // 4D dimensions
+  // 4D dimensions -- deprecated.  Use "shape" instead.
+  repeated uint32 num = 2;
+  repeated uint32 channels = 3;
+  repeate
