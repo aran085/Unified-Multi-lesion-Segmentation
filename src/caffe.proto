@@ -718,4 +718,6 @@ message EltwiseParameter {
     MAX = 2;
   }
   optional EltwiseOp operation = 1 [default = SUM]; // element-wise operation
-  repe
+  repeated float coeff = 2; // blob-wise coefficient for SUM operation
+
+  // Whether to use an asymptotically 
