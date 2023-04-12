@@ -741,4 +741,5 @@ message EmbedParameter {
   // 1 greater than the maximum possible input value.
   optional uint32 input_dim = 2;
 
-  optional bool bias_term = 3 
+  optional bool bias_term = 3 [default = true]; // Whether to use a bias term
+  optional FillerParameter weight_filler = 4; // The f
