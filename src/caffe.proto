@@ -735,4 +735,5 @@ message ELUParameter {
 
 // Message that stores parameters used by EmbedLayer
 message EmbedParameter {
-  optional uint32 num_output 
+  optional uint32 num_output = 1; // The number of outputs for the layer
+  // The input is given as integers to be interpreted 
