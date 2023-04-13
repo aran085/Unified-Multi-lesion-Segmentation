@@ -747,4 +747,6 @@ message EmbedParameter {
 
 }
 
-// Message tha
+// Message that stores parameters used by ExpLayer
+message ExpParameter {
+  // ExpLayer computes outputs y = base ^ (shift + scale * x), for base > 
