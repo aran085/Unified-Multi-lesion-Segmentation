@@ -760,4 +760,7 @@ message ExpParameter {
 /// Message that stores parameters used by FlattenLayer
 message FlattenParameter {
   // The first axis to flatten: all preceding axes are retained in the output.
-  // May be negative to index from the end (e.
+  // May be negative to index from the end (e.g., -1 for the last axis).
+  optional int32 axis = 1 [default = 1];
+
+  // The last axis to flatten: all following axes 
