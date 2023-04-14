@@ -754,4 +754,9 @@ message ExpParameter {
   // so y = exp(shift + scale * x).
   optional float base = 1 [default = -1.0];
   optional float scale = 2 [default = 1.0];
-  optional float shift = 3 [def
+  optional float shift = 3 [default = 0.0];
+}
+
+/// Message that stores parameters used by FlattenLayer
+message FlattenParameter {
+  // T
