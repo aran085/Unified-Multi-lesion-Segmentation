@@ -752,4 +752,6 @@ message ExpParameter {
   // ExpLayer computes outputs y = base ^ (shift + scale * x), for base > 0.
   // Or if base is set to the default (-1), base is set to e,
   // so y = exp(shift + scale * x).
-  optional float base
+  optional float base = 1 [default = -1.0];
+  optional float scale = 2 [default = 1.0];
+  optional float shift = 3 [def
