@@ -763,4 +763,5 @@ message FlattenParameter {
   // May be negative to index from the end (e.g., -1 for the last axis).
   optional int32 axis = 1 [default = 1];
 
-  // The last axis to flatten: all following axes 
+  // The last axis to flatten: all following axes are retained in the output.
+  // May be negative to index from the end (e.g., the default -1 for the last
