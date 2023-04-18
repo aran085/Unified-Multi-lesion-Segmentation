@@ -773,4 +773,8 @@ message FlattenParameter {
 message HDF5DataParameter {
   // Specify the data source.
   optional string source = 1;
-  // Specify the ba
+  // Specify the batch size.
+  optional uint32 batch_size = 2;
+
+  // Specify whether to shuffle the data.
+  // If
