@@ -769,4 +769,8 @@ message FlattenParameter {
   optional int32 end_axis = 2 [default = -1];
 }
 
-// Message that stores parameters used by HDF5D
+// Message that stores parameters used by HDF5DataLayer
+message HDF5DataParameter {
+  // Specify the data source.
+  optional string source = 1;
+  // Specify the ba
