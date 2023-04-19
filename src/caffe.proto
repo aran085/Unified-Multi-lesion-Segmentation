@@ -800,4 +800,6 @@ message HingeLossParameter {
 message ImageDataParameter {
   // Specify the data source.
   optional string source = 1;
-  // 
+  // Specify the batch size.
+  optional uint32 batch_size = 4 [default = 1];
+  // The rand_skip variable is for the data laye
