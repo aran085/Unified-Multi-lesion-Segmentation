@@ -777,4 +777,5 @@ message HDF5DataParameter {
   optional uint32 batch_size = 2;
 
   // Specify whether to shuffle the data.
-  // If
+  // If shuffle == true, the ordering of the HDF5 files is shuffled,
+  // and the ordering of data within any given HDF5 file is sh
