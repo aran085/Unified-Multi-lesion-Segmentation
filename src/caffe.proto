@@ -809,4 +809,6 @@ message ImageDataParameter {
   optional uint32 rand_skip = 7 [default = 0];
   // Whether or not ImageLayer should shuffle the list of files at every epoch.
   optional bool shuffle = 8 [default = false];
-  // It will also resize images if new_height or ne
+  // It will also resize images if new_height or new_width are not zero.
+  optional uint32 new_height = 9 [default = 0];
+  optional uint32 new_width = 10 [default
