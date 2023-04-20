@@ -815,4 +815,5 @@ message ImageDataParameter {
   // Specify if the images are color or gray
   optional bool is_color = 11 [default = true];
 
-  // 
+  // This is the value set for pixels or images where we don't know the label
+  optional int32 ignore_label = 15 [default 
