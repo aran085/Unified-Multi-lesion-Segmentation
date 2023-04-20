@@ -816,4 +816,10 @@ message ImageDataParameter {
   optional bool is_color = 11 [default = true];
 
   // This is the value set for pixels or images where we don't know the label
-  optional int32 ignore_label = 15 [default 
+  optional int32 ignore_label = 15 [default = 255];
+  enum LabelType {
+    NONE = 0;
+    IMAGE = 1;
+    PIXEL = 2;
+    PIXELML = 3; //for CASENet
+	PI
