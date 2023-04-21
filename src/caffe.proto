@@ -826,4 +826,7 @@ message ImageDataParameter {
   }
   optional LabelType label_type = 16 [default = IMAGE];
   optional uint32 num_label_chn = 17 [default = 1]; //num_label_chn := std::ceil(#classes/32.0)
-  optional uint32 num_edge_chn = 18 [default
+  optional uint32 num_edge_chn = 18 [default = 0];
+  optional string edge_file_prefix_format = 19;
+
+  // DEPRECATED. See TransformationParameter. For data pre-processin
