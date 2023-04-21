@@ -822,4 +822,7 @@ message ImageDataParameter {
     IMAGE = 1;
     PIXEL = 2;
     PIXELML = 3; //for CASENet
-	PI
+	PIXEL_BINARY = 4;
+  }
+  optional LabelType label_type = 16 [default = IMAGE];
+  optional uint32
