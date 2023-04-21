@@ -829,4 +829,6 @@ message ImageDataParameter {
   optional uint32 num_edge_chn = 18 [default = 0];
   optional string edge_file_prefix_format = 19;
 
-  // DEPRECATED. See TransformationParameter. For data pre-processin
+  // DEPRECATED. See TransformationParameter. For data pre-processing, we can do
+  // simple scaling and subtracting the data mean, if provided. Note that the
+  // mean subtraction is 
