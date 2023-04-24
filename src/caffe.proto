@@ -834,4 +834,6 @@ message ImageDataParameter {
   // mean subtraction is always carried out before scaling.
   optional float scale = 2 [default = 1];
   optional string mean_file = 3;
-  // DEPRECATED. Se
+  // DEPRECATED. See TransformationParameter. Specify if we would like to randomly
+  // crop an image.
+  optional uint32 cr
