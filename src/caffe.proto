@@ -843,4 +843,6 @@ message ImageDataParameter {
   optional string root_folder = 12 [default = ""];
 }
 
-m
+message InfogainLossParameter {
+  // Specify the infogain matrix source.
+  optional strin
