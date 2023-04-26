@@ -849,4 +849,6 @@ message InfogainLossParameter {
   optional int32 axis = 2 [default = 1]; // axis of prob
 }
 
-message InnerProductP
+message InnerProductParameter {
+  optional uint32 num_output = 1; // The number of outputs for the layer
+  optional bool bias_term = 2 [defa
