@@ -838,4 +838,9 @@ message ImageDataParameter {
   // crop an image.
   optional uint32 crop_size = 5 [default = 0];
   // DEPRECATED. See TransformationParameter. Specify if we want to randomly mirror
-  // data
+  // data.
+  optional bool mirror = 6 [default = false];
+  optional string root_folder = 12 [default = ""];
+}
+
+m
