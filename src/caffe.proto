@@ -855,4 +855,6 @@ message InnerProductParameter {
   optional FillerParameter weight_filler = 3; // The filler for the weight
   optional FillerParameter bias_filler = 4; // The filler for the bias
 
-  // The first axis to be lump
+  // The first axis to be lumped into a single inner product computation;
+  // all preceding axes are retained in the output.
+ 
