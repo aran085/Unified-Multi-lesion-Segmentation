@@ -859,4 +859,5 @@ message InnerProductParameter {
   // all preceding axes are retained in the output.
   // May be negative to index from the end (e.g., -1 for the last axis).
   optional int32 axis = 5 [default = 1];
-  // Specif
+  // Specify whether to transpose the weight matrix or not.
+  // If transpose == true, any operations will be p
