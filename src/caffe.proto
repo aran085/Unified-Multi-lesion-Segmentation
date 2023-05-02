@@ -874,4 +874,6 @@ message InputParameter {
   repeated BlobShape shape = 1;
 }
 
-// Message th
+// Message that stores parameters used by LogLayer
+message LogParameter {
+  // LogLayer computes outputs y = log_base(shi
