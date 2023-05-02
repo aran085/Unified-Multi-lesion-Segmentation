@@ -884,4 +884,6 @@ message LogParameter {
   optional float shift = 3 [default = 0.0];
 }
 
-// Message
+// Message that stores parameters used by LRNLayer
+message LRNParameter {
+  optional uint32 local_size = 1 
