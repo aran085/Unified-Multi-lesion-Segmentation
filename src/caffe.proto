@@ -890,3 +890,7 @@ message LRNParameter {
   optional float alpha = 2 [default = 1.];
   optional float beta = 3 [default = 0.75];
   enum NormRegion {
+    ACROSS_CHANNELS = 0;
+    WITHIN_CHANNEL = 1;
+  }
+  optional NormRegion norm_region = 4 [default = ACROSS_CHA
