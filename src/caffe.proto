@@ -904,4 +904,10 @@ message LRNParameter {
 }
 
 message MemoryDataParameter {
-  optional uint32 batch_size
+  optional uint32 batch_size = 1;
+  optional uint32 channels = 2;
+  optional uint32 height = 3;
+  optional uint32 width = 4;
+}
+
+message 
