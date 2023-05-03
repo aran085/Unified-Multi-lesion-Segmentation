@@ -899,4 +899,9 @@ message LRNParameter {
     DEFAULT = 0;
     CAFFE = 1;
     CUDNN = 2;
-  
+  }
+  optional Engine engine = 6 [default = DEFAULT];
+}
+
+message MemoryDataParameter {
+  optional uint32 batch_size
