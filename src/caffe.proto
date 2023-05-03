@@ -886,4 +886,7 @@ message LogParameter {
 
 // Message that stores parameters used by LRNLayer
 message LRNParameter {
-  optional uint32 local_size = 1 
+  optional uint32 local_size = 1 [default = 5];
+  optional float alpha = 2 [default = 1.];
+  optional float beta = 3 [default = 0.75];
+  enum NormRegion {
