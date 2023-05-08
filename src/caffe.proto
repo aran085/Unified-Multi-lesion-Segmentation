@@ -931,4 +931,5 @@ message PoolingParameter {
     AVE = 1;
     STOCHASTIC = 2;
   }
-  op
+  optional PoolMethod pool = 1 [default = MAX]; // The pooling method
+  // Pad, kernel size, and stri
