@@ -922,4 +922,13 @@ message MVNParameter {
 }
 
 message ParameterParameter {
-  optional BlobShape shape 
+  optional BlobShape shape = 1;
+}
+
+message PoolingParameter {
+  enum PoolMethod {
+    MAX = 0;
+    AVE = 1;
+    STOCHASTIC = 2;
+  }
+  op
