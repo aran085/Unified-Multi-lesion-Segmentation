@@ -962,4 +962,6 @@ message PowerParameter {
 }
 
 message PythonParameter {
-  optional
+  optional string module = 1;
+  optional string layer = 2;
+  // This value is set to the attribute `param_str` of the `P
