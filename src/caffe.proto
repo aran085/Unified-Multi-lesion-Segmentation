@@ -957,4 +957,9 @@ message PoolingParameter {
 message PowerParameter {
   // PowerLayer computes outputs y = (shift + scale * x) ^ power.
   optional float power = 1 [default = 1.0];
-  optional float sc
+  optional float scale = 2 [default = 1.0];
+  optional float shift = 3 [default = 0.0];
+}
+
+message PythonParameter {
+  optional
