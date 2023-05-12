@@ -955,4 +955,6 @@ message PoolingParameter {
 }
 
 message PowerParameter {
-  // PowerLay
+  // PowerLayer computes outputs y = (shift + scale * x) ^ power.
+  optional float power = 1 [default = 1.0];
+  optional float sc
