@@ -967,4 +967,6 @@ message PythonParameter {
   // This value is set to the attribute `param_str` of the `PythonLayer` object
   // in Python before calling the `setup()` method. This could be a number,
   // string, dictionary in Python dict format, JSON, etc. You may parse this
-  // string in `setup` method and us
+  // string in `setup` method and use it in `forward` and `backward`.
+  optional string param_str = 3 [default = ''];
+  // DEPRECAT
