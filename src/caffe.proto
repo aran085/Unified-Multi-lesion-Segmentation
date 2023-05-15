@@ -966,4 +966,5 @@ message PythonParameter {
   optional string layer = 2;
   // This value is set to the attribute `param_str` of the `PythonLayer` object
   // in Python before calling the `setup()` method. This could be a number,
-  // 
+  // string, dictionary in Python dict format, JSON, etc. You may parse this
+  // string in `setup` method and us
