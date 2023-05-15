@@ -975,4 +975,6 @@ message PythonParameter {
 
 // Message that stores parameters used by RecurrentLayer
 message RecurrentParameter {
-  // The dimension of the output (and usually hidden state) repr
+  // The dimension of the output (and usually hidden state) representation --
+  // must be explicitly set to non-zero.
+  optional uint32 num_output = 1 [default =
