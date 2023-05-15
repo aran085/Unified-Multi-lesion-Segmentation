@@ -969,4 +969,8 @@ message PythonParameter {
   // string, dictionary in Python dict format, JSON, etc. You may parse this
   // string in `setup` method and use it in `forward` and `backward`.
   optional string param_str = 3 [default = ''];
-  // DEPRECAT
+  // DEPRECATED
+  optional bool share_in_parallel = 4 [default = false];
+}
+
+// Message that stores parameters used by 
