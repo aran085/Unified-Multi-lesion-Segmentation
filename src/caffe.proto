@@ -973,4 +973,6 @@ message PythonParameter {
   optional bool share_in_parallel = 4 [default = false];
 }
 
-// Message that stores parameters used by 
+// Message that stores parameters used by RecurrentLayer
+message RecurrentParameter {
+  // The dimension of the output (and usually hidden state) repr
