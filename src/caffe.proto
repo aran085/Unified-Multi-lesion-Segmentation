@@ -1003,4 +1003,6 @@ message ReductionParameter {
 
   optional ReductionOp operation = 1 [default = SUM]; // reduction operation
 
-  // The first axis to reduce to a scalar -- may be negative to index fr
+  // The first axis to reduce to a scalar -- may be negative to index from the
+  // end (e.g., -1 for the last axis).
+  // (Currently, only reduction along ALL "tail" axes is supported; reduction
