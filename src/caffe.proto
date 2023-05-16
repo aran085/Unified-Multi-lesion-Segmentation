@@ -985,4 +985,5 @@ message RecurrentParameter {
   // Whether to enable displaying debug_info in the unrolled recurrent net.
   optional bool debug_info = 4 [default = false];
 
-  // Whether to add as additional inputs
+  // Whether to add as additional inputs (bottoms) the initial hidden state
+  // blobs, and add as additional outputs (tops) the final timeste
