@@ -982,4 +982,7 @@ message RecurrentParameter {
   optional FillerParameter weight_filler = 2; // The filler for the weight
   optional FillerParameter bias_filler = 3; // The filler for the bias
 
-  // Whether to enable displaying debug_info in the un
+  // Whether to enable displaying debug_info in the unrolled recurrent net.
+  optional bool debug_info = 4 [default = false];
+
+  // Whether to add as additional inputs
