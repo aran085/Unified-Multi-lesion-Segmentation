@@ -977,4 +977,7 @@ message PythonParameter {
 message RecurrentParameter {
   // The dimension of the output (and usually hidden state) representation --
   // must be explicitly set to non-zero.
-  optional uint32 num_output = 1 [default =
+  optional uint32 num_output = 1 [default = 0];
+
+  optional FillerParameter weight_filler = 2; // The filler for the weight
+  optional FillerParameter bias_fil
