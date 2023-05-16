@@ -994,4 +994,11 @@ message RecurrentParameter {
 
 // Message that stores parameters used by ReductionLayer
 message ReductionParameter {
-  enum Redu
+  enum ReductionOp {
+    SUM = 1;
+    ASUM = 2;
+    SUMSQ = 3;
+    MEAN = 4;
+  }
+
+  optional ReductionOp ope
