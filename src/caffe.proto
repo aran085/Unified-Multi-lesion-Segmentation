@@ -1001,4 +1001,6 @@ message ReductionParameter {
     MEAN = 4;
   }
 
-  optional ReductionOp ope
+  optional ReductionOp operation = 1 [default = SUM]; // reduction operation
+
+  // The first axis to reduce to a scalar -- may be negative to index fr
