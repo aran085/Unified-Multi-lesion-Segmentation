@@ -980,4 +980,6 @@ message RecurrentParameter {
   optional uint32 num_output = 1 [default = 0];
 
   optional FillerParameter weight_filler = 2; // The filler for the weight
-  optional FillerParameter bias_fil
+  optional FillerParameter bias_filler = 3; // The filler for the bias
+
+  // Whether to enable displaying debug_info in the un
