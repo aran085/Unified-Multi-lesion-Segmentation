@@ -988,4 +988,5 @@ message RecurrentParameter {
   // Whether to add as additional inputs (bottoms) the initial hidden state
   // blobs, and add as additional outputs (tops) the final timestep hidden state
   // blobs.  The number of additional bottom/top blobs required depends on the
-  //
+  // recurrent architecture -- e.g., 1 for RNNs, 2 for LSTMs.
+  optional bool expose_hidden = 5 [d
