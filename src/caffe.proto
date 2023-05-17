@@ -1006,3 +1006,5 @@ message ReductionParameter {
   // The first axis to reduce to a scalar -- may be negative to index from the
   // end (e.g., -1 for the last axis).
   // (Currently, only reduction along ALL "tail" axes is supported; reduction
+  // of axis M through N, where N < num_axes - 1, is unsupported.)
+  // Suppose we have an n-axis bottom Blob with s
