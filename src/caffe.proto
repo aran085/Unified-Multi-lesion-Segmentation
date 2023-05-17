@@ -1009,4 +1009,6 @@ message ReductionParameter {
   // of axis M through N, where N < num_axes - 1, is unsupported.)
   // Suppose we have an n-axis bottom Blob with shape:
   //     (d0, d1, d2, ..., d(m-1), dm, d(m+1), ..., d(n-1)).
-  // If axis == m, the output Blob w
+  // If axis == m, the output Blob will have shape
+  //     (d0, d1, d2, ..., d(m-1)),
+  // and the ReductionOp operation is performed (
