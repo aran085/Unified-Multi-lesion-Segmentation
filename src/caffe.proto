@@ -1025,4 +1025,6 @@ message ReductionParameter {
 message ReLUParameter {
   // Allow non-zero slope for negative inputs to speed up optimization
   // Described in:
-  // Maas, A. L., Hannun, A. Y., & Ng, A.
+  // Maas, A. L., Hannun, A. Y., & Ng, A. Y. (2013). Rectifier nonlinearities
+  // improve neural network acoustic models. In ICML Workshop on Deep Learning
+  // 
