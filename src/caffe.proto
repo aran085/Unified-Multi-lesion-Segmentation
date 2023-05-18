@@ -1016,4 +1016,9 @@ message ReductionParameter {
   // If axis == 0 (the default), the output Blob always has the empty shape
   // (count 1), performing reduction across the entire input --
   // often useful for creating new loss functions.
-  optional int32 ax
+  optional int32 axis = 2 [default = 0];
+
+  optional float coeff = 3 [default = 1.0]; // coefficient for output
+}
+
+// Mess
