@@ -1021,4 +1021,6 @@ message ReductionParameter {
   optional float coeff = 3 [default = 1.0]; // coefficient for output
 }
 
-// Mess
+// Message that stores parameters used by ReLULayer
+message ReLUParameter {
+  // Allow non-zero slope for negative 
