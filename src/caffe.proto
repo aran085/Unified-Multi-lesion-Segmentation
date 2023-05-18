@@ -1011,4 +1011,5 @@ message ReductionParameter {
   //     (d0, d1, d2, ..., d(m-1), dm, d(m+1), ..., d(n-1)).
   // If axis == m, the output Blob will have shape
   //     (d0, d1, d2, ..., d(m-1)),
-  // and the ReductionOp operation is performed (
+  // and the ReductionOp operation is performed (d0 * d1 * d2 * ... * d(m-1))
+  // times, each including (dm * d(m+1) * ... * d(n-1)) individu
