@@ -1023,4 +1023,6 @@ message ReductionParameter {
 
 // Message that stores parameters used by ReLULayer
 message ReLUParameter {
-  // Allow non-zero slope for negative 
+  // Allow non-zero slope for negative inputs to speed up optimization
+  // Described in:
+  // Maas, A. L., Hannun, A. Y., & Ng, A.
