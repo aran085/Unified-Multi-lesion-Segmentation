@@ -1014,4 +1014,6 @@ message ReductionParameter {
   // and the ReductionOp operation is performed (d0 * d1 * d2 * ... * d(m-1))
   // times, each including (dm * d(m+1) * ... * d(n-1)) individual data.
   // If axis == 0 (the default), the output Blob always has the empty shape
-  // (count 1), performi
+  // (count 1), performing reduction across the entire input --
+  // often useful for creating new loss functions.
+  optional int32 ax
