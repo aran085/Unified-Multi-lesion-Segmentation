@@ -1029,4 +1029,9 @@ message ReLUParameter {
   // improve neural network acoustic models. In ICML Workshop on Deep Learning
   // for Audio, Speech, and Language Processing.
   optional float negative_slope = 1 [default = 0];
-  enum Engi
+  enum Engine {
+    DEFAULT = 0;
+    CAFFE = 1;
+    CUDNN = 2;
+  }
+  optional Engine engine = 2 [default = DEFAULT];
