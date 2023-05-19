@@ -1043,4 +1043,8 @@ message ReshapeParameter {
   // Exactly one dimension may be set to -1, in which case its value is
   // inferred from the count of the bottom blob and the remaining dimensions.
   // For example, suppose we want to reshape a 2D blob "input" with shape 2 x 8:
+  //
+  //   layer {
+  //     type: "Reshape" bottom: "input" top: "output"
+  //     reshape_param { ... }
  
