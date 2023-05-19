@@ -1041,4 +1041,6 @@ message ReshapeParameter {
   // Specify the output dimensions. If some of the dimensions are set to 0,
   // the corresponding dimension from the bottom layer is used (unchanged).
   // Exactly one dimension may be set to -1, in which case its value is
-  // inferred from the count of the bottom blob and the
+  // inferred from the count of the bottom blob and the remaining dimensions.
+  // For example, suppose we want to reshape a 2D blob "input" with shape 2 x 8:
+ 
