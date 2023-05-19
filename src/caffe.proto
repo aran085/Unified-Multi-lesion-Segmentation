@@ -1039,3 +1039,5 @@ message ReLUParameter {
 
 message ReshapeParameter {
   // Specify the output dimensions. If some of the dimensions are set to 0,
+  // the corresponding dimension from the bottom layer is used (unchanged).
+  // Exactly one dimension
