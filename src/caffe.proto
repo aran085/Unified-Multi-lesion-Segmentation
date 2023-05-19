@@ -1050,4 +1050,7 @@ message ReshapeParameter {
   //   }
   //
   // If "input" is 2D with shape 2 x 8, then the following reshape_param
-  // specifications are all equiv
+  // specifications are all equivalent, producing a 3D blob "output" with shape
+  // 2 x 2 x 4:
+  //
+  //   reshape_param { shape { di
