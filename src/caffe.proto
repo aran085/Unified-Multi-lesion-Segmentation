@@ -1053,4 +1053,6 @@ message ReshapeParameter {
   // specifications are all equivalent, producing a 3D blob "output" with shape
   // 2 x 2 x 4:
   //
-  //   reshape_param { shape { di
+  //   reshape_param { shape { dim:  2  dim: 2  dim:  4 } }
+  //   reshape_param { shape { dim:  0  dim: 2  dim:  4 } }
+  //   resha
