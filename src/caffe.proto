@@ -1065,4 +1065,5 @@ message ReshapeParameter {
   // num_axes == -1), the entire bottom blob shape is included in the reshape,
   // and hence the shape field must specify the entire output shape.
   //
-  // ax
+  // axis may be non-zero to retain some portion of the beginning of the input
+  // shape (and may be negative to index from
