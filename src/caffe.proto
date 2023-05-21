@@ -1066,4 +1066,6 @@ message ReshapeParameter {
   // and hence the shape field must specify the entire output shape.
   //
   // axis may be non-zero to retain some portion of the beginning of the input
-  // shape (and may be negative to index from
+  // shape (and may be negative to index from the end; e.g., -1 to begin the
+  // reshape after the last axis, including nothing in the reshape,
+  // -2 to include only
