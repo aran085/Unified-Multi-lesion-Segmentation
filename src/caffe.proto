@@ -1058,4 +1058,7 @@ message ReshapeParameter {
   //   reshape_param { shape { dim:  0  dim: 2  dim: -1 } }
   //   reshape_param { shape { dim:  0  dim:-1  dim:  4 } }
   //
-  optional Bl
+  optional BlobShape shape = 1;
+
+  // axis and num_axes control the portion of the bottom blob's shape that are
+  
