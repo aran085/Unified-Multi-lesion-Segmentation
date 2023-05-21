@@ -1068,4 +1068,7 @@ message ReshapeParameter {
   // axis may be non-zero to retain some portion of the beginning of the input
   // shape (and may be negative to index from the end; e.g., -1 to begin the
   // reshape after the last axis, including nothing in the reshape,
-  // -2 to include only
+  // -2 to include only the last axis, etc.).
+  //
+  // For example, suppose "input" is a 2D blob with shape 2 x 8.
+  // Then the following ReshapeLa
