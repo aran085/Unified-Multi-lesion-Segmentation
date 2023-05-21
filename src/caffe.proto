@@ -1061,4 +1061,5 @@ message ReshapeParameter {
   optional BlobShape shape = 1;
 
   // axis and num_axes control the portion of the bottom blob's shape that are
-  
+  // replaced by (included in) the reshape. By default (axis == 0 and
+  // num_axes == -1), the entire bottom blob s
