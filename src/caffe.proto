@@ -1062,4 +1062,7 @@ message ReshapeParameter {
 
   // axis and num_axes control the portion of the bottom blob's shape that are
   // replaced by (included in) the reshape. By default (axis == 0 and
-  // num_axes == -1), the entire bottom blob s
+  // num_axes == -1), the entire bottom blob shape is included in the reshape,
+  // and hence the shape field must specify the entire output shape.
+  //
+  // ax
