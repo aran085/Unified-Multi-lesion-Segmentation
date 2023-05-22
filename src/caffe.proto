@@ -1071,4 +1071,5 @@ message ReshapeParameter {
   // -2 to include only the last axis, etc.).
   //
   // For example, suppose "input" is a 2D blob with shape 2 x 8.
-  // Then the following ReshapeLa
+  // Then the following ReshapeLayer specifications are all equivalent,
+  // producing a blob "output" with shape 2 x 2 x 
