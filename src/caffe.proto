@@ -1075,4 +1075,7 @@ message ReshapeParameter {
   // producing a blob "output" with shape 2 x 2 x 4:
   //
   //   reshape_param { shape { dim: 2  dim: 2  dim: 4 } }
-  //   reshape_param { shape { dim: 2  dim: 4 } 
+  //   reshape_param { shape { dim: 2  dim: 4 } axis:  1 }
+  //   reshape_param { shape { dim: 2  dim: 4 } axis: -3 }
+  //
+  // num_axes specifies the ext
