@@ -1080,4 +1080,5 @@ message ReshapeParameter {
   //
   // num_axes specifies the extent of the reshape.
   // If num_axes >= 0 (and axis >= 0), the reshape will be performed only on
-  //
+  // input axes in the range [axis, axis+num_axes].
+  // num_axes may also be -1, the default, to include al
