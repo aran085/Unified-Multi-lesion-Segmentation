@@ -1102,4 +1102,5 @@ message ReshapeParameter {
 }
 
 message ScaleParameter {
-  // The first axis of botto
+  // The first axis of bottom[0] (the first input Blob) along which to apply
+  // bottom[1] (the second input Blob).  May be negative to ind
