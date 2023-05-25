@@ -1097,4 +1097,9 @@ message ReshapeParameter {
   //   reshape_param { shape { dim: 2  dim: 1  dim: 8  }  }
   //   reshape_param { shape { dim: 1 }  axis: 1  num_axes: 0 }
   //
-  optional int32
+  optional int32 axis = 2 [default = 0];
+  optional int32 num_axes = 3 [default = -1];
+}
+
+message ScaleParameter {
+  // The first axis of botto
