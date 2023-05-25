@@ -1094,4 +1094,7 @@ message ReshapeParameter {
   //
   // On the other hand, these would produce output blob shape 2 x 1 x 8:
   //
-  //   reshape_param { shap
+  //   reshape_param { shape { dim: 2  dim: 1  dim: 8  }  }
+  //   reshape_param { shape { dim: 1 }  axis: 1  num_axes: 0 }
+  //
+  optional int32
