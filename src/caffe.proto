@@ -1084,4 +1084,6 @@ message ReshapeParameter {
   // num_axes may also be -1, the default, to include all remaining axes
   // (starting from axis).
   //
-  // For example, suppose "input" is a 2D blob with shape 2 x 8
+  // For example, suppose "input" is a 2D blob with shape 2 x 8.
+  // Then the following ReshapeLayer specifications are equivalent,
+  // producing a blob "output"
