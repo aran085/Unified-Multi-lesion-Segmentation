@@ -1086,4 +1086,7 @@ message ReshapeParameter {
   //
   // For example, suppose "input" is a 2D blob with shape 2 x 8.
   // Then the following ReshapeLayer specifications are equivalent,
-  // producing a blob "output"
+  // producing a blob "output" with shape 1 x 2 x 8.
+  //
+  //   reshape_param { shape { dim:  1  dim: 2  dim:  8 } }
+  //   reshape_param { shape { dim:  1 
