@@ -1089,4 +1089,6 @@ message ReshapeParameter {
   // producing a blob "output" with shape 1 x 2 x 8.
   //
   //   reshape_param { shape { dim:  1  dim: 2  dim:  8 } }
-  //   reshape_param { shape { dim:  1 
+  //   reshape_param { shape { dim:  1  dim: 2  }  num_axes: 1 }
+  //   reshape_param { shape { dim:  1  }  num_axes: 0 }
+  
