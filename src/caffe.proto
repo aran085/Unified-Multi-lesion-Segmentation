@@ -1112,4 +1112,5 @@ message ScaleParameter {
   //    (axis == 0 == -4) 100; 100x3; 100x3x40; 100x3x40x60
   //    (axis == 1 == -3)          3;     3x40;     3x40x60
   //    (axis == 2 == -2)                   40;       40x60
-  // 
+  //    (axis == 3 == -1)                                60
+  // Furthermore, bottom[1] may have the empty shap
