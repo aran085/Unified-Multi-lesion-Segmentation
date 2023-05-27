@@ -1130,4 +1130,7 @@ message ScaleParameter {
   // The initialization for the learned scale parameter.
   // Default is the unit (1) initialization, resulting in the ScaleLayer
   // initially performing the identity operation.
-  optional FillerParamet
+  optional FillerParameter filler = 3;
+
+  // Whether to also learn a bias (equivalent to a ScaleLayer+BiasLayer, but
+  // may be mo
