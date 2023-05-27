@@ -1128,4 +1128,6 @@ message ScaleParameter {
   // (filler is ignored unless just one bottom is given and the scale is
   // a learned parameter of the layer.)
   // The initialization for the learned scale parameter.
-  // Default is the unit (1) initiali
+  // Default is the unit (1) initialization, resulting in the ScaleLayer
+  // initially performing the identity operation.
+  optional FillerParamet
