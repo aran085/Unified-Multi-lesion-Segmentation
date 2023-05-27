@@ -1126,4 +1126,6 @@ message ScaleParameter {
   optional int32 num_axes = 2 [default = 1];
 
   // (filler is ignored unless just one bottom is given and the scale is
-  // a learned 
+  // a learned parameter of the layer.)
+  // The initialization for the learned scale parameter.
+  // Default is the unit (1) initiali
