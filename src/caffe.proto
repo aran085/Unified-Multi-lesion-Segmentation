@@ -1133,4 +1133,5 @@ message ScaleParameter {
   optional FillerParameter filler = 3;
 
   // Whether to also learn a bias (equivalent to a ScaleLayer+BiasLayer, but
-  // may be mo
+  // may be more efficient).  Initialized with bias_filler (defaults to 0).
+  optional bool bias_term = 4 [default = false]
