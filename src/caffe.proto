@@ -1134,4 +1134,10 @@ message ScaleParameter {
 
   // Whether to also learn a bias (equivalent to a ScaleLayer+BiasLayer, but
   // may be more efficient).  Initialized with bias_filler (defaults to 0).
-  optional bool bias_term = 4 [default = false]
+  optional bool bias_term = 4 [default = false];
+  optional FillerParameter bias_filler = 5;
+}
+
+message SigmoidParameter {
+  enum Engine {
+    DEFAULT =
