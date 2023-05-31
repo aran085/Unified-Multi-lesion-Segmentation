@@ -1158,4 +1158,11 @@ message SliceParameter {
   optional uint32 slice_dim = 1 [default = 1];
 }
 
-// Message that stores parameters used by Sof
+// Message that stores parameters used by SoftmaxLayer, SoftmaxWithLossLayer
+message SoftmaxParameter {
+  enum Engine {
+    DEFAULT = 0;
+    CAFFE = 1;
+    CUDNN = 2;
+  }
+  o
