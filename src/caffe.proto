@@ -1148,4 +1148,5 @@ message SigmoidParameter {
 }
 
 message SliceParameter {
-  // The axi
+  // The axis along which to slice -- may be negative to index from the end
+  // (e.g., -1 for the last
