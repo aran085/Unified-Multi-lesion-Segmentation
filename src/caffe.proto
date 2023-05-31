@@ -1154,4 +1154,8 @@ message SliceParameter {
   optional int32 axis = 3 [default = 1];
   repeated uint32 slice_point = 2;
 
-  // DEPRECATED: alias for "axis" -- does not support negati
+  // DEPRECATED: alias for "axis" -- does not support negative indexing.
+  optional uint32 slice_dim = 1 [default = 1];
+}
+
+// Message that stores parameters used by Sof
