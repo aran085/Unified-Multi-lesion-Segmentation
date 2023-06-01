@@ -1165,4 +1165,7 @@ message SoftmaxParameter {
     CAFFE = 1;
     CUDNN = 2;
   }
-  o
+  optional Engine engine = 1 [default = DEFAULT];
+
+  // The axis along which to perform the softmax -- may be negative to index
+  // from t
