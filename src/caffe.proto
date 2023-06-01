@@ -1169,4 +1169,11 @@ message SoftmaxParameter {
 
   // The axis along which to perform the softmax -- may be negative to index
   // from the end (e.g., -1 for the last axis).
-  // Any other axes will be evaluated as independent soft
+  // Any other axes will be evaluated as independent softmaxes.
+  optional int32 axis = 2 [default = 1];
+}
+
+message TanHParameter {
+  enum Engine {
+    DEFAULT = 0;
+    CAFFE =
