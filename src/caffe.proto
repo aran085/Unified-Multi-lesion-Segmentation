@@ -1183,4 +1183,8 @@ message TanHParameter {
 }
 
 // Message that stores parameters used by TileLayer
-mess
+message TileParameter {
+  // The index of the axis to tile.
+  optional int32 axis = 1 [default = 1];
+
+  // The nu
