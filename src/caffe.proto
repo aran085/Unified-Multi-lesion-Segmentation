@@ -1176,4 +1176,11 @@ message SoftmaxParameter {
 message TanHParameter {
   enum Engine {
     DEFAULT = 0;
-    CAFFE =
+    CAFFE = 1;
+    CUDNN = 2;
+  }
+  optional Engine engine = 1 [default = DEFAULT];
+}
+
+// Message that stores parameters used by TileLayer
+mess
