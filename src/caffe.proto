@@ -1191,4 +1191,6 @@ message TileParameter {
   optional int32 tiles = 2;
 }
 
-// Message that stores
+// Message that stores parameters used by ThresholdLayer
+message ThresholdParameter {
+  optional float threshold = 1 [default 
