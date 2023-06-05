@@ -1207,4 +1207,7 @@ message WindowDataParameter {
   // Specify the batch size.
   optional uint32 batch_size = 4;
   // Specify if we would like to randomly crop an image.
-  optional uint32 crop_size = 5 [
+  optional uint32 crop_size = 5 [default = 0];
+  // Specify if we want to randomly mirror data.
+  optional bool mirror = 6 [default = false];
+  // For
