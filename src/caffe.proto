@@ -1205,4 +1205,6 @@ message WindowDataParameter {
   optional float scale = 2 [default = 1];
   optional string mean_file = 3;
   // Specify the batch size.
-  optional uint32
+  optional uint32 batch_size = 4;
+  // Specify if we would like to randomly crop an image.
+  optional uint32 crop_size = 5 [
