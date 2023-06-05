@@ -1210,4 +1210,6 @@ message WindowDataParameter {
   optional uint32 crop_size = 5 [default = 0];
   // Specify if we want to randomly mirror data.
   optional bool mirror = 6 [default = false];
-  // For
+  // Foreground (object) overlap threshold
+  optional float fg_threshold = 7 [default = 0.5];
+  // Background (non-object)
