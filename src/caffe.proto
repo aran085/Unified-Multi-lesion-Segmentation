@@ -1200,4 +1200,6 @@ message WindowDataParameter {
   // Specify the data source.
   optional string source = 1;
   // For data pre-processing, we can do simple scaling and subtracting the
-  // dat
+  // data mean, if provided. Note that the mean subtraction is always carried
+  // out before scaling.
+  optional float scale 
