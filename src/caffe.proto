@@ -1212,4 +1212,6 @@ message WindowDataParameter {
   optional bool mirror = 6 [default = false];
   // Foreground (object) overlap threshold
   optional float fg_threshold = 7 [default = 0.5];
-  // Background (non-object)
+  // Background (non-object) overlap threshold
+  optional float bg_threshold = 8 [default = 0.5];
+  // Fraction of batch that should be foreground o
