@@ -1238,4 +1238,12 @@ message SPPParameter {
   optional uint32 pyramid_height = 1;
   optional PoolMethod pool = 2 [default = MAX]; // The pooling method
   enum Engine {
-    DEFAULT = 0
+    DEFAULT = 0;
+    CAFFE = 1;
+    CUDNN = 2;
+  }
+  optional Engine engine = 6 [default = DEFAULT];
+}
+
+// DEPRECATED: use LayerParameter.
+mes
