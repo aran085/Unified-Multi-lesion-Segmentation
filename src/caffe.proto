@@ -1222,4 +1222,6 @@ message WindowDataParameter {
   // Mode for cropping out a detection window
   // warp: cropped window is warped to a fixed size and aspect ratio
   // square: the tightest square around the window is cropped
-  optional string crop_mode = 11 [default = "warp"]
+  optional string crop_mode = 11 [default = "warp"];
+  // cache_images: will load all images in memory for faster access
+  optional bool cache_images = 12 [def
