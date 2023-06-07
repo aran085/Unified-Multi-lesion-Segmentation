@@ -1218,4 +1218,6 @@ message WindowDataParameter {
   optional float fg_fraction = 9 [default = 0.25];
   // Amount of contextual padding to add around a window
   // (used only by the window_data_layer)
-  optional uint32 context_pad = 10 [defaul
+  optional uint32 context_pad = 10 [default = 0];
+  // Mode for cropping out a detection window
+  // warp: cropped window is warped to a fixed size and aspect ra
