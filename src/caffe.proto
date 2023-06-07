@@ -1214,4 +1214,6 @@ message WindowDataParameter {
   optional float fg_threshold = 7 [default = 0.5];
   // Background (non-object) overlap threshold
   optional float bg_threshold = 8 [default = 0.5];
-  // Fraction of batch that should be foreground o
+  // Fraction of batch that should be foreground objects
+  optional float fg_fraction = 9 [default = 0.25];
+  // Amount of contextual padding to add around a 
