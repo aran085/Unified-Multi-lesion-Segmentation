@@ -1216,4 +1216,6 @@ message WindowDataParameter {
   optional float bg_threshold = 8 [default = 0.5];
   // Fraction of batch that should be foreground objects
   optional float fg_fraction = 9 [default = 0.25];
-  // Amount of contextual padding to add around a 
+  // Amount of contextual padding to add around a window
+  // (used only by the window_data_layer)
+  optional uint32 context_pad = 10 [defaul
