@@ -1235,4 +1235,7 @@ message SPPParameter {
     AVE = 1;
     STOCHASTIC = 2;
   }
-  optional uint3
+  optional uint32 pyramid_height = 1;
+  optional PoolMethod pool = 2 [default = MAX]; // The pooling method
+  enum Engine {
+    DEFAULT = 0
