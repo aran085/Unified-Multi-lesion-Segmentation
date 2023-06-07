@@ -1229,4 +1229,10 @@ message WindowDataParameter {
   optional string root_folder = 13 [default = ""];
 }
 
-message S
+message SPPParameter {
+  enum PoolMethod {
+    MAX = 0;
+    AVE = 1;
+    STOCHASTIC = 2;
+  }
+  optional uint3
