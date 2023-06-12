@@ -1254,4 +1254,9 @@ message V1LayerParameter {
   repeated NetStateRule exclude = 33;
   enum LayerType {
     NONE = 0;
-    ABS
+    ABSVAL = 35;
+    ACCURACY = 1;
+    ARGMAX = 30;
+    BNLL = 2;
+    CONCAT = 3;
+    CONTRASTIVE_LOSS = 37;
