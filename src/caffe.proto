@@ -1281,4 +1281,10 @@ message V1LayerParameter {
     MULTINOMIAL_LOGISTIC_LOSS = 16;
     MVN = 34;
     POOLING = 17;
-    POWER = 
+    POWER = 26;
+    RELU = 18;
+    SIGMOID = 19;
+    SIGMOID_CROSS_ENTROPY_LOSS = 27;
+    SILENCE = 36;
+    SOFTMAX = 20;
+    
