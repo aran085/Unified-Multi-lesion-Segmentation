@@ -1302,4 +1302,7 @@ message V1LayerParameter {
     STRICT = 0;
     PERMISSIVE = 1;
   }
-  repeat
+  repeated float blobs_lr = 7;
+  repeated float weight_decay = 8;
+  repeated float loss_weight = 35;
+  op
