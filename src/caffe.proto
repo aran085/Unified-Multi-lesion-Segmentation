@@ -1297,4 +1297,9 @@ message V1LayerParameter {
   optional LayerType type = 5;
   repeated BlobProto blobs = 6;
   repeated string param = 1001;
-  re
+  repeated DimCheckMode blob_share_mode = 1002;
+  enum DimCheckMode {
+    STRICT = 0;
+    PERMISSIVE = 1;
+  }
+  repeat
