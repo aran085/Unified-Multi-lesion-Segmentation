@@ -1332,4 +1332,6 @@ message V1LayerParameter {
   optional SliceParameter slice_param = 31;
   optional TanHParameter tanh_param = 37;
   optional ThresholdParameter threshold_param = 25;
-  optional
+  optional WindowDataParameter window_data_param = 20;
+  optional TransformationParameter transform_param = 36;
+  opt
