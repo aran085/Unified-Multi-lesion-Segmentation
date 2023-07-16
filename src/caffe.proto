@@ -1334,4 +1334,8 @@ message V1LayerParameter {
   optional ThresholdParameter threshold_param = 25;
   optional WindowDataParameter window_data_param = 20;
   optional TransformationParameter transform_param = 36;
-  opt
+  optional LossParameter loss_param = 42;
+  optional V0LayerParameter layer = 1;
+}
+
+// DEPRECATED: V0LayerParam
