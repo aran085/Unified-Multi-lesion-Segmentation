@@ -1338,4 +1338,5 @@ message V1LayerParameter {
   optional V0LayerParameter layer = 1;
 }
 
-// DEPRECATED: V0LayerParam
+// DEPRECATED: V0LayerParameter is the old way of specifying layer parameters
+// in Caffe.  We keep this message type around for legac
