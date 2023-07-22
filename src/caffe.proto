@@ -1342,4 +1342,7 @@ message V1LayerParameter {
 // in Caffe.  We keep this message type around for legacy support.
 message V0LayerParameter {
   optional string name = 1; // the layer name
-  optional string type = 2; // the strin
+  optional string type = 2; // the string to specify the layer type
+
+  // Parameters to specify layers with inner products.
+  optional 
