@@ -1339,4 +1339,7 @@ message V1LayerParameter {
 }
 
 // DEPRECATED: V0LayerParameter is the old way of specifying layer parameters
-// in Caffe.  We keep this message type around for legac
+// in Caffe.  We keep this message type around for legacy support.
+message V0LayerParameter {
+  optional string name = 1; // the layer name
+  optional string type = 2; // the strin
