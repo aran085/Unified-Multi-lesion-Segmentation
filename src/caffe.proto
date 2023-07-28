@@ -1345,4 +1345,5 @@ message V0LayerParameter {
   optional string type = 2; // the string to specify the layer type
 
   // Parameters to specify layers with inner products.
-  optional 
+  optional uint32 num_output = 3; // The number of outputs for the layer
+  optional bool biasterm = 4 [default = true];
