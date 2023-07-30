@@ -1350,4 +1350,6 @@ message V0LayerParameter {
   optional FillerParameter weight_filler = 5; // The filler for the weight
   optional FillerParameter bias_filler = 6; // The filler for the bias
 
-  optional uint32 pad = 7 [
+  optional uint32 pad = 7 [default = 0]; // The padding size
+  optional uint32 kernelsize = 8; // The kernel size
+  opt
