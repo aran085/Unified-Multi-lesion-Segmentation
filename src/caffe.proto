@@ -1346,4 +1346,6 @@ message V0LayerParameter {
 
   // Parameters to specify layers with inner products.
   optional uint32 num_output = 3; // The number of outputs for the layer
-  optional bool biasterm = 4 [default = true];
+  optional bool biasterm = 4 [default = true]; // whether to have bias terms
+  optional FillerParameter weight_filler = 5; // The filler for the weight
+  
