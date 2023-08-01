@@ -1359,4 +1359,5 @@ message V0LayerParameter {
     AVE = 1;
     STOCHASTIC = 2;
   }
-  optional PoolMethod pool 
+  optional PoolMethod pool = 11 [default = MAX]; // The pooling method
+  optional float dropout_ratio = 12 [default = 0.5]; // dropout
