@@ -1360,4 +1360,7 @@ message V0LayerParameter {
     STOCHASTIC = 2;
   }
   optional PoolMethod pool = 11 [default = MAX]; // The pooling method
-  optional float dropout_ratio = 12 [default = 0.5]; // dropout
+  optional float dropout_ratio = 12 [default = 0.5]; // dropout ratio
+
+  optional uint32 local_size = 13 [default = 5]; // for local response norm
+  optional float alpha = 14 [defaul
