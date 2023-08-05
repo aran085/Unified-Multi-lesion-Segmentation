@@ -1363,4 +1363,5 @@ message V0LayerParameter {
   optional float dropout_ratio = 12 [default = 0.5]; // dropout ratio
 
   optional uint32 local_size = 13 [default = 5]; // for local response norm
-  optional float alpha = 14 [defaul
+  optional float alpha = 14 [default = 1.]; // for local response norm
+  optional float beta = 15 [default = 0.75]; // for local 
