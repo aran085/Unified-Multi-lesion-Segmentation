@@ -1368,3 +1368,6 @@ message V0LayerParameter {
   optional float k = 22 [default = 1.];
 
   // For data layers, specify the data source
+  optional string source = 16;
+  // For data pre-processing, we can do simple scaling and subtracting the
+  // data 
