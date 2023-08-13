@@ -1370,4 +1370,6 @@ message V0LayerParameter {
   // For data layers, specify the data source
   optional string source = 16;
   // For data pre-processing, we can do simple scaling and subtracting the
-  // data 
+  // data mean, if provided. Note that the mean subtraction is always carried
+  // out before scaling.
+  optional float scale =
