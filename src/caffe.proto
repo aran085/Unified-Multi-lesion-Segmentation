@@ -1372,4 +1372,7 @@ message V0LayerParameter {
   // For data pre-processing, we can do simple scaling and subtracting the
   // data mean, if provided. Note that the mean subtraction is always carried
   // out before scaling.
-  optional float scale =
+  optional float scale = 17 [default = 1];
+  optional string meanfile = 18;
+  // For data layers, specify the batch size.
+  optional uint32 batchsiz
