@@ -1377,4 +1377,6 @@ message V0LayerParameter {
   // For data layers, specify the batch size.
   optional uint32 batchsize = 19;
   // For data layers, specify if we would like to randomly crop an image.
-  optional uin
+  optional uint32 cropsize = 20 [default = 0];
+  // For data layers, specify if we want to randomly mirror data.
+  optional
