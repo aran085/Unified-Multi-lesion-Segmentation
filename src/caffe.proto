@@ -1375,4 +1375,6 @@ message V0LayerParameter {
   optional float scale = 17 [default = 1];
   optional string meanfile = 18;
   // For data layers, specify the batch size.
-  optional uint32 batchsiz
+  optional uint32 batchsize = 19;
+  // For data layers, specify if we would like to randomly crop an image.
+  optional uin
