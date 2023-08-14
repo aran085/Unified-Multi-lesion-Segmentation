@@ -1379,4 +1379,7 @@ message V0LayerParameter {
   // For data layers, specify if we would like to randomly crop an image.
   optional uint32 cropsize = 20 [default = 0];
   // For data layers, specify if we want to randomly mirror data.
-  optional
+  optional bool mirror = 21 [default = false];
+
+  // The blobs containing the numeric parameters of the layer
+  
