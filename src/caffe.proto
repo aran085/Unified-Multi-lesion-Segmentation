@@ -1382,4 +1382,5 @@ message V0LayerParameter {
   optional bool mirror = 21 [default = false];
 
   // The blobs containing the numeric parameters of the layer
-  
+  repeated BlobProto blobs = 50;
+  // The ratio that is multiplied on the global learning rate. If you want 
