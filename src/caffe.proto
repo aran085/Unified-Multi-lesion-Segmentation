@@ -1390,4 +1390,5 @@ message V0LayerParameter {
   repeated float weight_decay = 52;
 
   // The rand_skip variable is for the data layer to skip a few data points
-  // to avoid all asynch
+  // to avoid all asynchronous sgd clients to start at the same point. The skip
+  // point would be set as rand_skip * rand(0,1). No
