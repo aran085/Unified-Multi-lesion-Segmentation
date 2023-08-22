@@ -1389,3 +1389,5 @@ message V0LayerParameter {
   // The weight decay that is multiplied on the global weight decay.
   repeated float weight_decay = 52;
 
+  // The rand_skip variable is for the data layer to skip a few data points
+  // to avoid all asynch
