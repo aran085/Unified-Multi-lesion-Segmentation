@@ -1396,4 +1396,6 @@ message V0LayerParameter {
   optional uint32 rand_skip = 53 [default = 0];
 
   // Fields related to detection (det_*)
-  // foreground (object) overl
+  // foreground (object) overlap threshold
+  optional float det_fg_threshold = 54 [default = 0.5];
+  // background (non-object) overlap 
