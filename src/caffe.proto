@@ -1398,4 +1398,6 @@ message V0LayerParameter {
   // Fields related to detection (det_*)
   // foreground (object) overlap threshold
   optional float det_fg_threshold = 54 [default = 0.5];
-  // background (non-object) overlap 
+  // background (non-object) overlap threshold
+  optional float det_bg_threshold = 55 [default = 0.5];
+  // Fraction of batch that should be foreground obj
