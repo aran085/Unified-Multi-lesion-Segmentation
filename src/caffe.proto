@@ -1407,4 +1407,7 @@ message V0LayerParameter {
 
   // Amount of contextual padding to add around a window
   // (used only by the window_data_layer)
-  opti
+  optional uint32 det_context_pad = 58 [default = 0];
+
+  // Mode for cropping out a detection window
+  // warp: cropped window is w
