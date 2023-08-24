@@ -1403,4 +1403,8 @@ message V0LayerParameter {
   // Fraction of batch that should be foreground objects
   optional float det_fg_fraction = 56 [default = 0.25];
 
-  // optional bool OBSOLETE_can_clobber = 57
+  // optional bool OBSOLETE_can_clobber = 57 [default = true];
+
+  // Amount of contextual padding to add around a window
+  // (used only by the window_data_layer)
+  opti
