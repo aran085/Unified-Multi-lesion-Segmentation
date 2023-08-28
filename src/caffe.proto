@@ -1410,4 +1410,6 @@ message V0LayerParameter {
   optional uint32 det_context_pad = 58 [default = 0];
 
   // Mode for cropping out a detection window
-  // warp: cropped window is w
+  // warp: cropped window is warped to a fixed size and aspect ratio
+  // square: the tightest square around the window is cropped
+ 
