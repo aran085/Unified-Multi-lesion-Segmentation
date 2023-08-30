@@ -1417,4 +1417,7 @@ message V0LayerParameter {
   // For ReshapeLayer, one needs to specify the new dimensions.
   optional int32 new_num = 60 [default = 0];
   optional int32 new_channels = 61 [default = 0];
-  
+  optional int32 new_height = 62 [default = 0];
+  optional int32 new_width = 63 [default = 0];
+
+  // Whether
