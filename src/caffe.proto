@@ -1412,4 +1412,6 @@ message V0LayerParameter {
   // Mode for cropping out a detection window
   // warp: cropped window is warped to a fixed size and aspect ratio
   // square: the tightest square around the window is cropped
- 
+  optional string det_crop_mode = 59 [default = "warp"];
+
+  // For ReshapeLayer, one needs to specify the new dime
