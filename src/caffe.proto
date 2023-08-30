@@ -1414,4 +1414,7 @@ message V0LayerParameter {
   // square: the tightest square around the window is cropped
   optional string det_crop_mode = 59 [default = "warp"];
 
-  // For ReshapeLayer, one needs to specify the new dime
+  // For ReshapeLayer, one needs to specify the new dimensions.
+  optional int32 new_num = 60 [default = 0];
+  optional int32 new_channels = 61 [default = 0];
+  
