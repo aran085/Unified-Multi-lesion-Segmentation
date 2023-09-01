@@ -1420,4 +1420,5 @@ message V0LayerParameter {
   optional int32 new_height = 62 [default = 0];
   optional int32 new_width = 63 [default = 0];
 
-  // Whether
+  // Whether or not ImageLayer should shuffle the list of files at every epoch.
+  // It will also resize images if new_height or new_width
