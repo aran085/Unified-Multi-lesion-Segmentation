@@ -1424,4 +1424,6 @@ message V0LayerParameter {
   // It will also resize images if new_height or new_width are not zero.
   optional bool shuffle_images = 64 [default = false];
 
-  // For ConcatLayer, one needs to specify the 
+  // For ConcatLayer, one needs to specify the dimension for concatenation, and
+  // the other dimensions must be the same for all the bottom blobs.
+  /
