@@ -1421,4 +1421,7 @@ message V0LayerParameter {
   optional int32 new_width = 63 [default = 0];
 
   // Whether or not ImageLayer should shuffle the list of files at every epoch.
-  // It will also resize images if new_height or new_width
+  // It will also resize images if new_height or new_width are not zero.
+  optional bool shuffle_images = 64 [default = false];
+
+  // For ConcatLayer, one needs to specify the 
