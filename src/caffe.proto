@@ -1426,4 +1426,5 @@ message V0LayerParameter {
 
   // For ConcatLayer, one needs to specify the dimension for concatenation, and
   // the other dimensions must be the same for all the bottom blobs.
-  /
+  // By default it will concatenate blobs along the channels dimension.
+  optional uint32 concat_dim = 65 [def
