@@ -1433,4 +1433,5 @@ message V0LayerParameter {
 }
 
 message PReLUParameter {
-  // Par
+  // Parametric ReLU described in K. He et al, Delving Deep into Rectifiers:
+  // Surpassing Human-Level
