@@ -1436,4 +1436,6 @@ message PReLUParameter {
   // Parametric ReLU described in K. He et al, Delving Deep into Rectifiers:
   // Surpassing Human-Level Performance on ImageNet Classification, 2015.
 
-  // Initial value of a_i. Default is a_i=0.25 for all i
+  // Initial value of a_i. Default is a_i=0.25 for all i.
+  optional FillerParameter filler = 1;
+  // Whether or not slope parameters are shared across channels.
