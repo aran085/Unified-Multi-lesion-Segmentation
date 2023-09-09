@@ -9,4 +9,5 @@
 namespace caffe {
 
 template <typename Dtype>
-void MultiChannelBinSigmoidCrossEn
+void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::LayerSetUp(
+    const vector<Blob<Dtype>*>& bottom, const vector<Blob<Dty
