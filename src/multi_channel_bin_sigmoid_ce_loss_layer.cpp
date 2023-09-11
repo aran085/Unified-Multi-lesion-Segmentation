@@ -13,4 +13,7 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::LayerSetUp(
     const vector<Blob<Dtype>*>& bottom, const vector<Blob<Dtype>*>& top) {
   LossLayer<Dtype>::LayerSetUp(bottom, top);
   sigmoid_bottom_vec_.clear();
-  sigmoid_bottom_
+  sigmoid_bottom_vec_.push_back(bottom[0]);
+  sigmoid_top_vec_.clear();
+  sigmoid_top_vec_.push_back(sigmoid_output_.get());
+  sigmoid_layer
