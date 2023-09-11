@@ -16,4 +16,6 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::LayerSetUp(
   sigmoid_bottom_vec_.push_back(bottom[0]);
   sigmoid_top_vec_.clear();
   sigmoid_top_vec_.push_back(sigmoid_output_.get());
-  sigmoid_layer
+  sigmoid_layer_->SetUp(sigmoid_bottom_vec_, sigmoid_top_vec_);
+
+  const MCBSCELossParameter  mcbsce_loss_param = this->layer_param_.mcbsce_loss_
