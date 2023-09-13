@@ -25,4 +25,6 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::LayerSetUp(
 
 template <typename Dtype>
 void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Reshape(
-    const vector<Blob<Dtype>*
+    const vector<Blob<Dtype>*>& bottom, const vector<Blob<Dtype>*>& top) {
+  LossLayer<Dtype>::Reshape(bottom, top);
+  outer_num_ =
