@@ -23,4 +23,6 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::LayerSetUp(
 	key_ = mcbsce_loss_param.key();
 }
 
-template <typename Dt
+template <typename Dtype>
+void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Reshape(
+    const vector<Blob<Dtype>*
