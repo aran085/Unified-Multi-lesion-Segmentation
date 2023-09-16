@@ -31,4 +31,8 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Reshape(
   inner_num_ = bottom[0]->count(1);  // instance size: |output| == |target|
   CHECK_EQ(bottom[0]->width()*bottom[0]->height(), bottom[1]->width()*bottom[1]->height()) <<
     "MULTICHANNEL_BIN_SIGMOID_CROSS_ENTROPY_LOSS layer inputs must have the same spatial dimension.";
-  sigmoid
+  sigmoid_layer_->Reshape(sigmoid_bottom_vec_, sigmoid_top_vec_);
+}
+
+template <typename Dtype>
+void MultiChannelBinSigmo
