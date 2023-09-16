@@ -28,4 +28,5 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Reshape(
     const vector<Blob<Dtype>*>& bottom, const vector<Blob<Dtype>*>& top) {
   LossLayer<Dtype>::Reshape(bottom, top);
   outer_num_ = bottom[0]->shape(0);  // batch size
-  inner_num_ = bottom[0]->count(1);  // instance size: |output| == 
+  inner_num_ = bottom[0]->count(1);  // instance size: |output| == |target|
+  CHECK_EQ(bottom[0]->width()*bottom[0]->height(), bottom[1]->width()*bottom[1]->height()) <<
