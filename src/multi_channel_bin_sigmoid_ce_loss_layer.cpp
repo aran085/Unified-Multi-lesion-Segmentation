@@ -35,4 +35,5 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Reshape(
 }
 
 template <typename Dtype>
-void MultiChannelBinSigmo
+void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Forward_cpu(
+    const vector<Blob<Dtype>*>& bottom, const vector<Blob<D
