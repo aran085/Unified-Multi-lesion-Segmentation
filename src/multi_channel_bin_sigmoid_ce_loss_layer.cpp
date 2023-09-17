@@ -36,4 +36,7 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Reshape(
 
 template <typename Dtype>
 void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Forward_cpu(
-    const vector<Blob<Dtype>*>& bottom, const vector<Blob<D
+    const vector<Blob<Dtype>*>& bottom, const vector<Blob<Dtype>*>& top) {
+  // The forward pass computes the sigmoid outputs.
+  sigmoid_bottom_vec_[0] = bottom[0];
+  si
