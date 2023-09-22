@@ -42,4 +42,8 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Forward_cpu(
   sigmoid_layer_->Forward(sigmoid_bottom_vec_, sigmoid_top_vec_);
   // Compute the loss (negative log likelihood)
   // Stable version of loss computation from input data
-  const Dtype* input_data = bottom[0]->cpu_data
+  const Dtype* input_data = bottom[0]->cpu_data();
+  const Dtype* target = bottom[1]->cpu_data();
+  
+  //lt
+  const Dtype* sigmoid_output_data = sigmoid
