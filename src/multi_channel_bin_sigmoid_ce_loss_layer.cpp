@@ -48,4 +48,6 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Forward_cpu(
   //lt
   const Dtype* sigmoid_output_data = sigmoid_output_->cpu_data();
   Dtype *temp_count_pos = new Dtype[num_label_];
-  Dtype *temp_neg_count = ne
+  Dtype *temp_neg_count = new Dtype[num_label_];
+  Dtype (*temp_count_neg)[5] = new Dtype[num_label_][5]; 
+  Dtype (*temp_neg_loss)[5] = new Dtype[
