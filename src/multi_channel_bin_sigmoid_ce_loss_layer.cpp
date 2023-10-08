@@ -69,4 +69,6 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Forward_cpu(
 		  temp_neg_loss[i][j] = 0;
 	  }
   }
- 
+  int dim = bottom[0]->height()*bottom[0]->width();
+    //jin xing tong ji
+    for (int i = 0; i < nu
