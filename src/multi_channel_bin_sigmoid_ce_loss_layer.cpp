@@ -75,4 +75,6 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Forward_cpu(
       for (int j = 0; j < dim; ++j) { /* loop over pixels */
 	      int idx = i*dim+j;
 		  Dtype temp = log(1 + exp(input_data[idx] - 2 * input_data[idx] * (input_data[idx] >= 0)));
-      	if 
+      	if (target[j] == (i+1)) {
+			temp_count_pos[i] = temp_count_pos[i] + key_;
+			temp_pos_loss[i] -=input_data[idx] * (1 - (input_data
