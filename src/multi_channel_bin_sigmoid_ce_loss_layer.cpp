@@ -77,4 +77,8 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Forward_cpu(
 		  Dtype temp = log(1 + exp(input_data[idx] - 2 * input_data[idx] * (input_data[idx] >= 0)));
       	if (target[j] == (i+1)) {
 			temp_count_pos[i] = temp_count_pos[i] + key_;
-			temp_pos_loss[i] -=input_data[idx] * (1 - (input_data
+			temp_pos_loss[i] -=input_data[idx] * (1 - (input_data[idx] >= 0)) - temp;
+		}else{
+			Dtype gailv = sigmoid_output_data[idx];
+			if(gailv >=0 && gailv < 0.2){
+				
