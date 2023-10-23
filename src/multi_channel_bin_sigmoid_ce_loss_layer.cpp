@@ -99,4 +99,8 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Forward_cpu(
 		}
 	  }
 	}
- // zai ci que ding  temp_neg_coun
+ // zai ci que ding  temp_neg_count  da xiao 
+ for(int i = 0; i < num_label_;i++){
+	 Dtype p_c = temp_count_pos[i];
+	 if(p_c == 0){
+		 f
