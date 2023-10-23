@@ -103,4 +103,6 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Forward_cpu(
  for(int i = 0; i < num_label_;i++){
 	 Dtype p_c = temp_count_pos[i];
 	 if(p_c == 0){
-		 f
+		 for(int j = 0;j < 5; j++){
+			 temp_neg_count[i] += temp_count_neg[i][j];
+			 temp_loss_neg[i] +=temp_ne
