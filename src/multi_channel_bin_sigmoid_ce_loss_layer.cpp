@@ -140,4 +140,5 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Forward_cpu(
 }
 
 template <typename Dtype>
-void MultiChannel
+void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Backward_cpu(
+    const vector<Blob<Dtype>*>& top, const vector<bool>& p
