@@ -135,3 +135,9 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Forward_cpu(
 	 loss_pos +=  temp_pos_loss[i] * count_neg/(count_pos+count_neg);
 	 loss_neg +=  temp_loss_neg[i] * count_pos/(count_neg+count_pos);
  }
+  //
+  top[0]->mutable_cpu_data()[0] = (loss_pos + loss_neg);
+}
+
+template <typename Dtype>
+void MultiChannel
