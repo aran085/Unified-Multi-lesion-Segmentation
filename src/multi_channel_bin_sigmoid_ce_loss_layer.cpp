@@ -148,4 +148,6 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Backward_cpu(
                << " Layer cannot backpropagate to label inputs.";
   }
   if (propagate_down[0]) {
-    // Fi
+    // First, compute the diff
+    const int count = bottom[0]->count();
+    const Dtype* sigmoid_output_data = sigmo
