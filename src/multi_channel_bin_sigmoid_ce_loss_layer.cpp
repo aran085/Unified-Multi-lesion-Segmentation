@@ -141,4 +141,8 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Forward_cpu(
 
 template <typename Dtype>
 void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Backward_cpu(
-    const vector<Blob<Dtype>*>& top, const vector<bool>& p
+    const vector<Blob<Dtype>*>& top, const vector<bool>& propagate_down,
+    const vector<Blob<Dtype>*>& bottom) {
+  if (propagate_down[1]) {
+    LOG(FATAL) << this->type()
+   
