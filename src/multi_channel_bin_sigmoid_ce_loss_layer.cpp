@@ -152,4 +152,7 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Backward_cpu(
     const int count = bottom[0]->count();
     const Dtype* sigmoid_output_data = sigmoid_output_->cpu_data();
     const Dtype* target = bottom[1]->cpu_data();
-    Dtype* bottom_diff = bottom[0]->m
+    Dtype* bottom_diff = bottom[0]->mutable_cpu_diff();
+    //lt
+	int dim = bottom[0]->height()*bottom[0]->width();
+	Dtype *temp_c
