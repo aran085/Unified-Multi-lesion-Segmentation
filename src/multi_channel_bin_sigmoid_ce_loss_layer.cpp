@@ -157,4 +157,6 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Backward_cpu(
 	int dim = bottom[0]->height()*bottom[0]->width();
 	Dtype *temp_count_pos = new Dtype[num_label_];
 	Dtype *temp_neg_count = new Dtype[num_label_];
-	Dtype (*temp_count_neg)
+	Dtype (*temp_count_neg)[5] = new Dtype[num_label_][5]; 
+	Dtype (*temp_neg_loss)[5] = new Dtype[num_label_][5];
+	Dtype 
