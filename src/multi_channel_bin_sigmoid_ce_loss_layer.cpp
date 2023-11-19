@@ -175,4 +175,6 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Backward_cpu(
 	  }
 	}
 	//jin xing tong ji
-    for (int i = 0; i < num_label_; ++i
+    for (int i = 0; i < num_label_; ++i) { /* loop over channels */
+      for (int j = 0; j < dim; ++j) { /* loop over pixels */
+	      int id
