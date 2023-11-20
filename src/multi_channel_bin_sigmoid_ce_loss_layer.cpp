@@ -181,4 +181,7 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Backward_cpu(
       	if (target[j] == (i+1)) {
 			temp_count_pos[i] = temp_count_pos[i] + key_;
 		}else{
-			Dtyp
+			Dtype gailv = sigmoid_output_data[idx];
+			if(gailv >=0 && gailv < 0.2){
+				temp_count_neg[i][0]++;
+			}else if(gai
