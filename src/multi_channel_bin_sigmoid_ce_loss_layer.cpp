@@ -190,4 +190,10 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Backward_cpu(
 				temp_count_neg[i][2]++;
 			}else if(gailv >=0.6 && gailv < 0.8){
 				temp_count_neg[i][3]++;
-			}else if(ga
+			}else if(gailv >=0.8 && gailv <= 1.0){
+				temp_count_neg[i][4]++;
+			}
+		}
+	  }
+	}
+ // zai ci que ding  temp_neg
