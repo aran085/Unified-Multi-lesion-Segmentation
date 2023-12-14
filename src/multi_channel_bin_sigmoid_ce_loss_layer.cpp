@@ -219,4 +219,8 @@ void MultiChannelBinSigmoidCrossEntropyLossLayer<Dtype>::Backward_cpu(
 for(int i = 0; i < num_label_;i++){
 	 Dtype temp = temp_count_pos[i]/key_;
 	 count_pos += temp;
-	 count_neg += (int)(temp_neg_
+	 count_neg += (int)(temp_neg_count[i]/4);
+ }
+	//
+	  /* calculate gradient */
+    for (int i = 0; i < num_label_; ++i) { /* loop
