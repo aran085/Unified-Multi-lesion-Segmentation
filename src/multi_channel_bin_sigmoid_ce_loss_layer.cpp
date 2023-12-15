@@ -223,4 +223,7 @@ for(int i = 0; i < num_label_;i++){
  }
 	//
 	  /* calculate gradient */
-    for (int i = 0; i < num_label_; ++i) { /* loop
+    for (int i = 0; i < num_label_; ++i) { /* loop over channels */
+	  Dtype p_c = temp_count_pos[i];
+	  for (int j = 0; j < dim; ++j) { /* loop over pixels */
+	      int idx =
