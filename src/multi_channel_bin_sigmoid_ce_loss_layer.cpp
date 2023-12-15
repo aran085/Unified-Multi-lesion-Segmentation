@@ -226,4 +226,6 @@ for(int i = 0; i < num_label_;i++){
     for (int i = 0; i < num_label_; ++i) { /* loop over channels */
 	  Dtype p_c = temp_count_pos[i];
 	  for (int j = 0; j < dim; ++j) { /* loop over pixels */
-	      int idx =
+	      int idx = i*dim+j;
+      	if (target[j] == (i+1)) {
+	  	    bottom_diff[idx] = sigmoid_output_data[idx] - 
