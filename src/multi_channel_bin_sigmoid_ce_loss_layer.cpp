@@ -228,4 +228,5 @@ for(int i = 0; i < num_label_;i++){
 	  for (int j = 0; j < dim; ++j) { /* loop over pixels */
 	      int idx = i*dim+j;
       	if (target[j] == (i+1)) {
-	  	    bottom_diff[idx] = sigmoid_output_data[idx] - 
+	  	    bottom_diff[idx] = sigmoid_output_data[idx] - 1;
+			bottom_diff[idx] *= count_neg/(count_neg + count_pos ); /* weight_pos_ was calculated in forward phase */
