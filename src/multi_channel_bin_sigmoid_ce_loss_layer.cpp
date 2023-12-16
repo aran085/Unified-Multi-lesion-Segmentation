@@ -233,4 +233,6 @@ for(int i = 0; i < num_label_;i++){
       	} else {
 			Dtype gailv = sigmoid_output_data[idx];
 			if(p_c == 0){
-				bottom_diff[idx] =
+				bottom_diff[idx] = sigmoid_output_data[idx] - 0;
+				bottom_diff[idx] *= count_pos/(count_pos+count_neg);
+			}else if(p_c <= temp_count_neg[i][
