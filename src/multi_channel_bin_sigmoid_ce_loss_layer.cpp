@@ -242,4 +242,6 @@ for(int i = 0; i < num_label_;i++){
 				}else{
 					bottom_diff[idx] = 0;
 				}
-			}else if(p_c <= temp_count_neg[i][4] + temp_count_neg[
+			}else if(p_c <= temp_count_neg[i][4] + temp_count_neg[i][3]){
+				if(gailv >= 0.6 && gailv <=1.0){
+					bottom_diff[idx] = sigmoid_output_data[idx
