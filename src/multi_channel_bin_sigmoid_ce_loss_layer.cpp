@@ -260,3 +260,9 @@ for(int i = 0; i < num_label_;i++){
 				if(gailv >= 0.2 && gailv <= 1.0){
 					bottom_diff[idx] = sigmoid_output_data[idx] - 0;
 					bottom_diff[idx] *= count_pos/(count_pos+count_neg);
+				}else{
+					bottom_diff[idx] = 0;
+				}
+			}else{
+				bottom_diff[idx] = sigmoid_output_data[idx] - 0;
+			
