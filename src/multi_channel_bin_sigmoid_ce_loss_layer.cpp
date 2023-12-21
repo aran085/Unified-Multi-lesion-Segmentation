@@ -258,4 +258,5 @@ for(int i = 0; i < num_label_;i++){
 				}
 			}else if(p_c <= temp_count_neg[i][4] + temp_count_neg[i][3] + temp_count_neg[i][2]){
 				if(gailv >= 0.2 && gailv <= 1.0){
-					botto
+					bottom_diff[idx] = sigmoid_output_data[idx] - 0;
+					bottom_diff[idx] *= count_pos/(count_pos+count_neg);
