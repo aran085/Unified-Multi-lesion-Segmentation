@@ -273,4 +273,8 @@ for(int i = 0; i < num_label_;i++){
 	//
 
     // Scale down gradient
-    
+    Dtype loss_weight = top[0]->cpu_diff()[0];
+    caffe_scal(count, loss_weight, bottom_diff);
+  }
+}
+
