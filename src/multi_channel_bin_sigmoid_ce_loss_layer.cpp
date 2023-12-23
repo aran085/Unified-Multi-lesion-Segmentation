@@ -278,3 +278,8 @@ for(int i = 0; i < num_label_;i++){
   }
 }
 
+#ifdef CPU_ONLY
+STUB_GPU(MultiChannelBinSigmoidCrossEntropyLossLayer);
+#endif
+
+INSTANTIATE_CLASS(MultiChannelB
