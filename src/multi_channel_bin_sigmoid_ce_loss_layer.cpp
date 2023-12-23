@@ -285,4 +285,4 @@ STUB_GPU(MultiChannelBinSigmoidCrossEntropyLossLayer);
 INSTANTIATE_CLASS(MultiChannelBinSigmoidCrossEntropyLossLayer);
 REGISTER_LAYER_CLASS(MultiChannelBinSigmoidCrossEntropyLoss);
 
-}  // names
+}  // namespace caffe
