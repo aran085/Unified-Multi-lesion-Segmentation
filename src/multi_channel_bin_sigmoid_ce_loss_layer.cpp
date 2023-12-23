@@ -282,4 +282,7 @@ for(int i = 0; i < num_label_;i++){
 STUB_GPU(MultiChannelBinSigmoidCrossEntropyLossLayer);
 #endif
 
-INSTANTIATE_CLASS(MultiChannelB
+INSTANTIATE_CLASS(MultiChannelBinSigmoidCrossEntropyLossLayer);
+REGISTER_LAYER_CLASS(MultiChannelBinSigmoidCrossEntropyLoss);
+
+}  // names
