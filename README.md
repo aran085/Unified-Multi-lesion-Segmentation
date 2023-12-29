@@ -12,4 +12,4 @@ layer {
   }
 }
 ```
-## Dataset\nDDR can be downloaded [here.](https://github.com/nkicsl/DDR-dataset)\n\n## 
+## Dataset\nDDR can be downloaded [here.](https://github.com/nkicsl/DDR-dataset)\n\n## License\nWe use the Anti 996 License. More about it can be found [here](https://github.com/996icu/996.ICU/blob/master/LICENSE).
