@@ -7,4 +7,9 @@ layer {
   top: "loss"
   loss_weight: 1.0
   mcbsce_loss_param {
-   
+    key: 10
+    num_label: 4
+  }
+}
+```
+## Dataset\nDDR can be downloaded [here.](https://github.com/nkicsl/DDR-dataset)\n\n## 
