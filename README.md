@@ -2,3 +2,9 @@
 layer {
   name: "loss"
   type: "MultiChannelBinSigmoidCrossEntropyLoss"
+  bottom: "pred"
+  bottom: "label"
+  top: "loss"
+  loss_weight: 1.0
+  mcbsce_loss_param {
+   
